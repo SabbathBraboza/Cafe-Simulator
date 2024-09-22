@@ -5,7 +5,7 @@ public class Pointer : MonoBehaviour
 {
       [Header("Reference")]
       [SerializeField] private Player player;
-    [SerializeField] private new Transform transform;
+      [SerializeField] private new Transform transform;
       [SerializeField] private new MeshRenderer render;
       [SerializeField] private Material PointerMaterial;
       [SerializeField] private Animator anime;
