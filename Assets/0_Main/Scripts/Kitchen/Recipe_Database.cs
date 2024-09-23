@@ -8,14 +8,13 @@ public class Recipe_Database : MonoBehaviour
       [SerializeField] private Recipe[] Recipes;
       [SerializeField] private RectTransform Content;
 
-      [Button]
-
-      private void OnValidate()
+      private void Start()
       {
             for(int i = 0; i < Content.childCount; i++)
             {
                   var child = Content.GetChild(i).gameObject;
                   DestroyImmediate(child);
+                  i--;
             }
 
             Recipes = Resources.LoadAll<Recipe>("Recipes");
