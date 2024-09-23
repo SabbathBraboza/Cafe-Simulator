@@ -10,12 +10,13 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 62cee34adb0a2534aa74293e09a6b70b, type: 3}
-  m_Name: Burger
+  m_Name: Pav Bhaji
   m_EditorClassIdentifier: 
-  sprite: {fileID: 21300000, guid: 4866ea5bf592ddf469c58931f8189656, type: 3}
-  Flour: 1
+  sprite: {fileID: 21300000, guid: 64c99921ebc2ecb4ba6384251b1b64aa, type: 3}
+  Flour: 2
   Onion: 1
-  Tomato: 1
-  Meat: 1
-  Cheese: 2
-  Potate: 0
+  Tomate: 0
+  Meat: 0
+  Cheese: 0
+  Potate: 2
+  Sauce: 0

@@ -15,7 +15,8 @@ MonoBehaviour:
   sprite: {fileID: 21300000, guid: 011bb7871c8880d4b92271dbee0ed307, type: 3}
   Flour: 2
   Onion: 2
-  Tomato: 1
+  Tomate: 0
   Meat: 0
-  Cheese: 4
+  Cheese: 2
   Potate: 0
+  Sauce: 2
