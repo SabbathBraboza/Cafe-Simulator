@@ -200,6 +200,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5c86b3d963882f64189f6861d14cce52, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  rectTransform: {fileID: 8721602474384707894}
   title: {fileID: 8129699719668490955}
   image: {fileID: 6453484025780834451}
 --- !u!1 &6293322866312476284
