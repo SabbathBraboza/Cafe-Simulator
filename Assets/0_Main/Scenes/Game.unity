@@ -978,7 +978,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0.938}
   m_AnchorMax: {x: 1, y: 0.938}
-  m_AnchoredPosition: {x: 0, y: 48.05934}
+  m_AnchoredPosition: {x: 0, y: 16822.387}
   m_SizeDelta: {x: 0, y: 1050.0676}
   m_Pivot: {x: 0, y: 1}
 --- !u!114 &119348510
@@ -1914,8 +1914,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0.9635252}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: 0.34313965, y: -0.91967773}
-  m_SizeDelta: {x: 0.70510864, y: 1.1765137}
+  m_AnchoredPosition: {x: 0, y: 0}
+  m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!1 &262821321
 GameObject:
@@ -9838,7 +9838,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!224 &412322575
 RectTransform:
   m_ObjectHideFlags: 0
@@ -9848,8 +9848,8 @@ RectTransform:
   m_GameObject: {fileID: 412322574}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
+  m_LocalScale: {x: 0, y: 0, z: 0}
+  m_ConstrainProportionsScale: 1
   m_Children:
   - {fileID: 2123348888}
   m_Father: {fileID: 2043018657}
@@ -14733,6 +14733,18 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+      - m_Target: {fileID: 2087195497}
+        m_TargetAssemblyTypeName: PanelAnimation, Assembly-CSharp
+        m_MethodName: OpenFoodApp
+        m_Mode: 6
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &1220014853
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -15509,8 +15521,8 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 2055596312}
   m_HandleRect: {fileID: 2055596311}
   m_Direction: 2
-  m_Value: 0.99065214
-  m_Size: 0.6917106
+  m_Value: 1
+  m_Size: 0.54717183
   m_NumberOfSteps: 0
   m_OnValueChanged:
     m_PersistentCalls:
@@ -18398,7 +18410,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 1760932973}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 2087195497}
+        m_TargetAssemblyTypeName: PanelAnimation, Assembly-CSharp
+        m_MethodName: OpenFoodApp
+        m_Mode: 6
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 1
+        m_CallState: 2
 --- !u!114 &1760932973
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -20068,8 +20092,8 @@ RectTransform:
   m_Children: []
   m_Father: {fileID: 1324599941}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0, y: 0.30540755}
-  m_AnchorMax: {x: 1, y: 0.9971181}
+  m_AnchorMin: {x: 0, y: 0}
+  m_AnchorMax: {x: 0, y: 0}
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 20, y: 20}
   m_Pivot: {x: 0.5, y: 0.5}
