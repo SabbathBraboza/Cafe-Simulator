@@ -1,6 +1,7 @@
 using Emp37.Utility.Singleton;
 using UnityEngine;
 using UnityEngine.AI;
+using UnityEngine.Rendering.Universal;
 
 public class Player : MonoBehaviour
 {
@@ -34,6 +35,20 @@ public class Player : MonoBehaviour
             if (IsMoving)
                   anime.SetFloat(SpeedHash, agent.velocity.magnitude);
     }
+
+      public void Disable()
+      {
+            enabled = false;
+            agent.enabled = false;
+            anime.enabled = false;
+      }
+
+      public void Enable()
+      {
+            enabled = true;
+            agent.enabled = true;
+            anime.enabled = true;
+      }
 
       public void MoveTo(Vector3 position)
       {
