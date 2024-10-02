@@ -13,10 +13,18 @@ MonoBehaviour:
   m_Name: Buger
   m_EditorClassIdentifier: 
   sprite: {fileID: 21300000, guid: 4866ea5bf592ddf469c58931f8189656, type: 3}
-  Flour: 2
-  Onion: 1
-  Tomate: 1
-  Meat: 0
-  Cheese: 2
-  Potate: 0
-  Sauce: 2
+  Ingredients:
+  - <type>k__BackingField: 0
+    Count: 1
+  - <type>k__BackingField: 1
+    Count: 1
+  - <type>k__BackingField: 2
+    Count: 1
+  - <type>k__BackingField: 3
+    Count: 0
+  - <type>k__BackingField: 4
+    Count: 2
+  - <type>k__BackingField: 5
+    Count: 0
+  - <type>k__BackingField: 6
+    Count: 1

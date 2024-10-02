@@ -13,10 +13,18 @@ MonoBehaviour:
   m_Name: Pizza
   m_EditorClassIdentifier: 
   sprite: {fileID: 21300000, guid: 011bb7871c8880d4b92271dbee0ed307, type: 3}
-  Flour: 2
-  Onion: 2
-  Tomate: 0
-  Meat: 0
-  Cheese: 2
-  Potate: 0
-  Sauce: 2
+  Ingredients:
+  - <type>k__BackingField: 0
+    Count: 3
+  - <type>k__BackingField: 1
+    Count: 1
+  - <type>k__BackingField: 2
+    Count: 0
+  - <type>k__BackingField: 3
+    Count: 3
+  - <type>k__BackingField: 4
+    Count: 3
+  - <type>k__BackingField: 5
+    Count: 0
+  - <type>k__BackingField: 6
+    Count: 3

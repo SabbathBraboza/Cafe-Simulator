@@ -10,21 +10,21 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 62cee34adb0a2534aa74293e09a6b70b, type: 3}
-  m_Name: Pav Bhaji
+  m_Name: MockRecipe
   m_EditorClassIdentifier: 
-  sprite: {fileID: 21300000, guid: 64c99921ebc2ecb4ba6384251b1b64aa, type: 3}
+  sprite: {fileID: 0}
   Ingredients:
   - <type>k__BackingField: 0
     Count: 2
   - <type>k__BackingField: 1
-    Count: 2
+    Count: 0
   - <type>k__BackingField: 2
     Count: 2
   - <type>k__BackingField: 3
-    Count: 0
+    Count: 2
   - <type>k__BackingField: 4
-    Count: 0
+    Count: 2
   - <type>k__BackingField: 5
-    Count: 3
+    Count: 2
   - <type>k__BackingField: 6
-    Count: 0
+    Count: 2

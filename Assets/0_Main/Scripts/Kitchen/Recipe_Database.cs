@@ -4,10 +4,12 @@ using UnityEngine.UI;
 
 public class Recipe_Database : MonoBehaviour
 {
-      [SerializeField] private Recipe_Display Recipe_DisplayPerfabs;
-
-      [SerializeField] private Recipe[] Recipes;
-      [SerializeField] private RectTransform Content;
+    [SerializeField] private Recipe_Display Recipe_DisplayPerfabs;
+    [SerializeField] private Recipe[] Recipes;
+    
+    [Space(5f)]
+    [Header("RectTransform:")]
+    [SerializeField] private RectTransform Content;
     [SerializeField] private VerticalLayoutGroup VerticalLayoutGroup;
 
     [Button]

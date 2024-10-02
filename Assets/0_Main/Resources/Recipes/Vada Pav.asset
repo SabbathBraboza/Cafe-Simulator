@@ -13,10 +13,18 @@ MonoBehaviour:
   m_Name: Vada Pav
   m_EditorClassIdentifier: 
   sprite: {fileID: 21300000, guid: bace2734181ffc741979ec5794122bcb, type: 3}
-  Flour: 1
-  Onion: 0
-  Tomate: 0
-  Meat: 0
-  Cheese: 0
-  Potate: 2
-  Sauce: 1
+  Ingredients:
+  - <type>k__BackingField: 0
+    Count: 1
+  - <type>k__BackingField: 1
+    Count: 0
+  - <type>k__BackingField: 2
+    Count: 0
+  - <type>k__BackingField: 3
+    Count: 0
+  - <type>k__BackingField: 4
+    Count: 0
+  - <type>k__BackingField: 5
+    Count: 2
+  - <type>k__BackingField: 6
+    Count: 1
