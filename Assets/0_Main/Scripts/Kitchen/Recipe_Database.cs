@@ -10,6 +10,7 @@ public class Recipe_Database : MonoBehaviour
       [SerializeField] private RectTransform Content;
     [SerializeField] private VerticalLayoutGroup VerticalLayoutGroup;
 
+    [Button]
       private void Start()
       {
             for(int i = 0; i < Content.childCount; i++)
