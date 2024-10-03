@@ -15,7 +15,7 @@ MonoBehaviour:
   sprite: {fileID: 0}
   Ingredients:
   - <type>k__BackingField: 0
-    Count: 2
+    Count: 8
   - <type>k__BackingField: 1
     Count: 0
   - <type>k__BackingField: 2
@@ -23,8 +23,8 @@ MonoBehaviour:
   - <type>k__BackingField: 3
     Count: 2
   - <type>k__BackingField: 4
-    Count: 2
+    Count: 5
   - <type>k__BackingField: 5
     Count: 2
   - <type>k__BackingField: 6
-    Count: 2
+    Count: 4

@@ -13,14 +13,11 @@ public class Ingredient_Adder : MonoBehaviour
         Remove.onClick.RemoveAllListeners();
     }
 
-    private void Reset()
-    {
-        IngredientDisplay = GetComponentInChildren<Ingredient_Display>();
-    }
-    public void DisplayAs(Ingredient value)
-    {
-        IngredientDisplay.DisplayAs(value, false);
-    } 
+    private void Reset() =>IngredientDisplay = GetComponentInChildren<Ingredient_Display>();
+    
+    public void DisplayAs(Ingredient value) => IngredientDisplay.DisplayAs(value, false);
+
+    public void IncrementValue(Ingredient value) => IngredientDisplay.SetCount(value.Count);
     
     public void SetFunctionilty(UnityAction onAdd, UnityAction onRemove)
     {

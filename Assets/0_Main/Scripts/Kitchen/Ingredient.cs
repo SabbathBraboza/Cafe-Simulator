@@ -11,8 +11,10 @@ public struct Ingredient
 
     public static readonly Array Types = Enum.GetValues(typeof(Type));
 
+    public const int Max = 9;
+
     [field: SerializeField] public Type type { get; private set;}
-    [Range(0, 9)] public int Count;
+    [Range(0, Max)] public int Count;
 
     internal Ingredient(Type type)
     {
