@@ -12,7 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 62cee34adb0a2534aa74293e09a6b70b, type: 3}
   m_Name: Pav Bhaji
   m_EditorClassIdentifier: 
-  sprite: {fileID: 21300000, guid: 64c99921ebc2ecb4ba6384251b1b64aa, type: 3}
+  sprite: {fileID: 21300000, guid: 30f32d5a5819adf479ded4724108d473, type: 3}
   Ingredients:
   - <type>k__BackingField: 0
     Count: 2
