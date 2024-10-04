@@ -17,7 +17,7 @@ public class PanelAnimation : MonoBehaviour
       [SerializeField] private RectTransform SettingAppPosition;
       [SerializeField] private RectTransform AppPosition;
  
-    public void IpadPanelMove(bool value) => IPadPanel.LeanMoveLocalX(value? 0: -1400, Duration).setEase(LeanType);
+    public void IpadPanelMove(bool value) => IPadPanel.LeanMoveLocalX(value? 0: -2000, Duration).setEase(LeanType);
 
      public void OpenSettingApp(bool value)
       {
