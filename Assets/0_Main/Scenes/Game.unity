@@ -1743,7 +1743,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0.938}
   m_AnchorMax: {x: 1, y: 0.938}
-  m_AnchoredPosition: {x: 0, y: 47}
+  m_AnchoredPosition: {x: 0, y: 34037.793}
   m_SizeDelta: {x: 0, y: 726.34}
   m_Pivot: {x: 0, y: 1}
 --- !u!114 &119348510
@@ -12755,7 +12755,7 @@ RectTransform:
   m_GameObject: {fileID: 412322574}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalScale: {x: 0, y: 0, z: 0}
   m_ConstrainProportionsScale: 1
   m_Children:
   - {fileID: 1211150095}
@@ -22053,7 +22053,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 0, y: 0}
+  m_AnchoredPosition: {x: -1900, y: 0}
   m_SizeDelta: {x: 1920, y: 1080}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!1 &1059910855
@@ -26643,8 +26643,8 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 2055596312}
   m_HandleRect: {fileID: 2055596311}
   m_Direction: 2
-  m_Value: 0.10566418
-  m_Size: 0.99674654
+  m_Value: 1
+  m_Size: 0.5351482
   m_NumberOfSteps: 0
   m_OnValueChanged:
     m_PersistentCalls:
@@ -27630,7 +27630,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: 00:00:00
+  m_text: 11:30
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: c49e87550518ca94083e42edd65254d9, type: 2}
   m_sharedMaterial: {fileID: 6808510544596111905, guid: c49e87550518ca94083e42edd65254d9,
@@ -33297,7 +33297,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: 0, y: 41828.254}
+  m_AnchoredPosition: {x: 0, y: 78224.25}
   m_SizeDelta: {x: 0, y: 1460}
   m_Pivot: {x: 0, y: 1}
 --- !u!1 &1835086811
@@ -38193,7 +38193,7 @@ RectTransform:
   m_GameObject: {fileID: 2123348887}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalScale: {x: 0, y: 0, z: 0}
   m_ConstrainProportionsScale: 1
   m_Children:
   - {fileID: 1342450323}
