@@ -21,7 +21,7 @@ public class Resolution : Base<int>
     protected override void Initialize()
     {
         dropdown.ClearOptions();
-        dropdown.AddOptions(Settings.Resolutions.Select(res => $"{res.width} X { res.height} - {res.refreshRateRatio}").ToList());
+        dropdown.AddOptions(Settings.Resolutions.Select(res => $"{res.width}X{ res.height}").ToList());
 
             print("gg");
         dropdown.value = Settings.ResolutionIndex;
