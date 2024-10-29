@@ -30,7 +30,7 @@ public class Recipe_Database : MonoBehaviour
             foreach(Recipe recipe in Recipes)
             {
                   var display = Instantiate(Recipe_DisplayPerfabs, Content);
-                  display.SetRecipe(recipe);
+                  //display.SetRecipe(recipe);
                   Size.y += display.Hieght + VerticalLayoutGroup.spacing;
             }
         Content.sizeDelta = Size;

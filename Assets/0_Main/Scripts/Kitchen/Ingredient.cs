@@ -1,26 +1,28 @@
-using System;
 using UnityEngine;
+using System;
+using Emp37.Utility;
 
 [Serializable]
 public struct Ingredient 
 {
-     public enum Type
-     {
-        Flour, Onion, Tomate, Meat, Cheese, Potate, Sauce,
-     }
+    [SerializeField, Readonly] private string Name;
 
-    public static readonly Array Types = Enum.GetValues(typeof(Type));
+    [field:SerializeField] public Type type { get; private set; }
 
-    public const int Max = 10;
+    [SerializeField] public Sprite IngredientImage;
+    public int IngredientPrice;
 
-    [field: SerializeField] public Type type { get; private set;}
+    public const int Max = 15;
     [Range(0, Max)] public int Count;
 
-    internal Ingredient(Type type)
+    [ExecuteInEditMode]
+    public static readonly Array IngrendientTypeLength = Enum.GetValues(typeof(Type));
+
+    public enum Type
     {
-        this.type = type;
-        Count = default;  
+        Flour,Onion,Tomato,Meat,Cheese,Potate,Rice,
+        Chicken,Butter,Ghee,Chana,Mix_Spices,Ketchup,Bread_bun,Lettuce,
+        Capsicum,oil, Cabbage, Carrot, Corns,Ginger,Mint
     }
 
-    internal Ingredient(Type type, int count) : this(type) => this.Count = count;
 }

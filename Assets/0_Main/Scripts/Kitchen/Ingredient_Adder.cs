@@ -17,7 +17,7 @@ public class Ingredient_Adder : MonoBehaviour
     
     public void DisplayAs(Ingredient value) => IngredientDisplay.DisplayAs(value, false);
 
-    public void IncrementValue(Ingredient value) => IngredientDisplay.SetCount(value.Count);
+    //public void IncrementValue(Ingredient value) => IngredientDisplay.SetCount(value.Count);
     
     public void SetFunctionilty(UnityAction onAdd, UnityAction onRemove)
     {

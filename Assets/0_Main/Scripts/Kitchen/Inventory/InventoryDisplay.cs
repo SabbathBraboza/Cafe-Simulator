@@ -15,16 +15,16 @@ public class InventoryDisplay : MonoBehaviour
 
     public void DisplayAs(Ingredient ingredient, int ProductiD, bool Check = true)
     {
-        if(Check && ingredient.Count==0)
-        {
-            Destroy(this.gameObject);
-            return;
-        }
+        //if(Check && ingredient.Count==0)
+        //{
+        //    Destroy(this.gameObject);
+        //    return;
+        //}
 
-        gameObject.name = ingredient.type.ToString();
-        ProductName.text = ingredient.type.ToString();
-        ProductPrice.text = "RS:" + ingredient.type.ToString();
-        ProductQuantity.text = "Quantity:" + ingredient.type.ToString();
+        //gameObject.name = ingredient.type.ToString();
+        //ProductName.text = ingredient.type.ToString();
+        //ProductPrice.text = "RS:" + ingredient.type.ToString();
+        //ProductQuantity.text = "Quantity:" + ingredient.type.ToString();
 
         //image.sprite = ingredient;
 

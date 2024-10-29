@@ -14,10 +14,10 @@ public class Ingredient_Display : MonoBehaviour
     public void DisplayAs(Ingredient recipe, bool Check)
     {
 
-      title.text = recipe.type.ToString();
-      SetCount(recipe.Count);
+      //title.text = recipe.type.ToString();
+      //SetCount(recipe.Count);
         
-       if(Check && recipe.Count == 0) gameObject.SetActive(false);
+      // if(Check && recipe.Count == 0) gameObject.SetActive(false);
     }
 
     public void SetCount(int Count) => value.text = "x" + Count;
