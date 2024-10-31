@@ -63,7 +63,8 @@ public class ShopProduct : MonoBehaviour
     {
         NotInteract.SetActive(true);
         var CurrentProductInfo = Instantiate(CartProduct, CartProductContent);
-        CurrentProductInfo.BasicCartProductDetails(ProductName.name, ProductImage.sprite, ProductID, CurrentProductAmount, NotInteract, MaxCountLimit, InvetoryRefObject);
+        CurrentProductInfo.BasicCartProductDetails(ProductName.name, ProductImage.sprite, ProductID,
+            CurrentProductAmount, NotInteract, MaxCountLimit, InvetoryRefObject);
     }
 
     public void Hide() => NotInteract.SetActive(true);

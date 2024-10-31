@@ -1,4 +1,5 @@
 using UnityEngine;
+using static UnityEngine.Rendering.DebugUI;
 
 public class Restaurant_App_Panel_Animation : MonoBehaviour
 {
@@ -27,11 +28,9 @@ public class Restaurant_App_Panel_Animation : MonoBehaviour
 
     [Space(10f)]
     [Header("Trade Content Animation:")]
-    [SerializeField] private RectTransform TradeContentPanel;
+    [SerializeField] private RectTransform SuperMartketPanel;
+    [SerializeField] private RectTransform ShopPanel;
     [SerializeField] private RectTransform CartPanel;
-
-    [Space(7f)]
-    [SerializeField] private RectTransform CartButtonPosition;
 
     [Space(10f)]
     [Header("Inventory Content Animation:")]
@@ -124,25 +123,37 @@ public class Restaurant_App_Panel_Animation : MonoBehaviour
     }
     #endregion
 
-    #region Trade Animation Panel
-    public void OpenTradeContent(bool value)
+    #region Shop Animation Panel
+    public void OpenShopPanel(bool Value)
     {
-        TradeContentPanel.LeanMoveLocalX(value ? 0 : 680, 0.2f).setEase(Type);
-    }
-    public void OpenCartAnimation(bool value)
-    {
-        if (value)
+        if (Value)
         {
-            CartPanel.position = CartButtonPosition.position;
-            CartPanel.LeanMove(value ? Vector3.one : Vector3.zero, 0.3f).setEase(Type);
-            CartPanel.LeanScale(value ? Vector3.one : Vector3.zero, 0.3f).setEase(Type);
+            ShopPanel.LeanScale(Value ? Vector3.one : Vector3.zero, 0.2f).setEase(Type);
+            ShopPanel.LeanMove(Value ? Vector3.one : Vector3.zero, 0.2f).setEase(Type);
         }
         else
         {
-            CartPanel.LeanMove(value ? Vector3.one : Vector3.zero, 0.4f).setEase(Type);
-            CartPanel.LeanScale(value ? Vector2.one : Vector2.zero, 0.4f).setEase(Type);
+            ShopPanel.LeanScale(Value ? Vector2.one : Vector2.zero, 0.2f).setEase(Type);
+            ShopPanel.LeanMove(Value ? Vector3.one : Vector3.zero, 0.2f).setEase(Type).setDelay(0.02f);
         }
     }
+
+    public void OpenCartPanel(bool Value)
+    {
+        if (Value)
+        {
+            CartPanel.LeanScale(Value ? Vector3.one : Vector3.zero, 0.2f).setEase(Type);
+            CartPanel.LeanMove(Value ? Vector3.one : Vector3.zero, 0.2f).setEase(Type);
+        }
+        else
+        {
+            CartPanel.LeanScale(Value ? Vector2.one : Vector2.zero, 0.2f).setEase(Type);
+            CartPanel.LeanMove(Value ? Vector3.one : Vector3.zero, 0.2f).setEase(Type).setDelay(0.02f);
+        }
+    }
+
+    public void SuperMarket(bool value) => SuperMartketPanel.LeanMoveLocalX(value ? 0 : 680, 0.2f).setEase(Type);
+    
     #endregion
 
     #region Inventory Animation Panel 
