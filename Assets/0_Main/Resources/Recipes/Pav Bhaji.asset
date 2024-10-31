@@ -12,19 +12,50 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 62cee34adb0a2534aa74293e09a6b70b, type: 3}
   m_Name: Pav Bhaji
   m_EditorClassIdentifier: 
-  sprite: {fileID: 21300000, guid: 30f32d5a5819adf479ded4724108d473, type: 3}
+  RecipeImage: {fileID: 21300000, guid: 30f32d5a5819adf479ded4724108d473, type: 3}
+  ProductPrice: 100
+  productObject: {fileID: 0}
+  Veg: 1
+  Non_Veg: 0
+  Other: 0
+  BuildSeconds: 0
+  BuildMinutes: 2
+  OrderSeconds: 0
+  OrderMinutes: 4
   Ingredients:
-  - <type>k__BackingField: 0
+  - Name: Bread_Bun
+    <type>k__BackingField: 13
+    IngredientImage: {fileID: 21300000, guid: 63d60144ab064d647921acbb239a8dcd, type: 3}
+    IngredientPrice: 0
     Count: 2
-  - <type>k__BackingField: 1
+  - Name: Onion
+    <type>k__BackingField: 1
+    IngredientImage: {fileID: 21300000, guid: c5c8616ac623178449734687e53006b4, type: 3}
+    IngredientPrice: 0
     Count: 2
-  - <type>k__BackingField: 2
-    Count: 2
-  - <type>k__BackingField: 3
-    Count: 0
-  - <type>k__BackingField: 4
-    Count: 0
-  - <type>k__BackingField: 5
+  - Name: Potate
+    <type>k__BackingField: 5
+    IngredientImage: {fileID: 21300000, guid: 0aab1bdbd6952aa49b4cb865632f167e, type: 3}
+    IngredientPrice: 0
     Count: 3
-  - <type>k__BackingField: 6
-    Count: 0
+  - Name: Butter
+    <type>k__BackingField: 8
+    IngredientImage: {fileID: 21300000, guid: 5d371da55691b69408ff1d35904bf5fc, type: 3}
+    IngredientPrice: 0
+    Count: 2
+  - Name: Mix_Spices
+    <type>k__BackingField: 11
+    IngredientImage: {fileID: 21300000, guid: d0bbcdae1e319974c862621aebfc066e, type: 3}
+    IngredientPrice: 0
+    Count: 2
+  - Name: Carrot
+    <type>k__BackingField: 18
+    IngredientImage: {fileID: 21300000, guid: 9d8d271e0ad748e4a809a0fc67b08a02, type: 3}
+    IngredientPrice: 0
+    Count: 2
+  - Name: Oil
+    <type>k__BackingField: 16
+    IngredientImage: {fileID: 21300000, guid: 719902b3a43da6548ad9e49b2bdee9ea, type: 3}
+    IngredientPrice: 0
+    Count: 1
+  CurrentImagePath: 

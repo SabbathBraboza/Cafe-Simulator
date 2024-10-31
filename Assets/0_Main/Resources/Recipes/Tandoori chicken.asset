@@ -1,0 +1,41 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 62cee34adb0a2534aa74293e09a6b70b, type: 3}
+  m_Name: Tandoori chicken
+  m_EditorClassIdentifier: 
+  RecipeImage: {fileID: 21300000, guid: 370336aceae3fcc4e9c5d180de3d297c, type: 3}
+  ProductPrice: 425
+  productObject: {fileID: 0}
+  Veg: 0
+  Non_Veg: 1
+  Other: 0
+  BuildSeconds: 0
+  BuildMinutes: 3
+  OrderSeconds: 0
+  OrderMinutes: 5
+  Ingredients:
+  - Name: Chicken
+    <type>k__BackingField: 7
+    IngredientImage: {fileID: 21300000, guid: eb89fe8cb59730e4f996969915bc0c93, type: 3}
+    IngredientPrice: 0
+    Count: 4
+  - Name: Mix_Spices
+    <type>k__BackingField: 11
+    IngredientImage: {fileID: 21300000, guid: d0bbcdae1e319974c862621aebfc066e, type: 3}
+    IngredientPrice: 0
+    Count: 6
+  - Name: Butter
+    <type>k__BackingField: 8
+    IngredientImage: {fileID: 21300000, guid: 5d371da55691b69408ff1d35904bf5fc, type: 3}
+    IngredientPrice: 0
+    Count: 2
+  CurrentImagePath: 

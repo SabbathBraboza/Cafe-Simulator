@@ -1,0 +1,56 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 62cee34adb0a2534aa74293e09a6b70b, type: 3}
+  m_Name: Shawarma
+  m_EditorClassIdentifier: 
+  RecipeImage: {fileID: 21300000, guid: 7ceeb302479221944b57a6ac38311f96, type: 3}
+  ProductPrice: 120
+  productObject: {fileID: 0}
+  Veg: 0
+  Non_Veg: 1
+  Other: 0
+  BuildSeconds: 0
+  BuildMinutes: 30
+  OrderSeconds: 0
+  OrderMinutes: 60
+  Ingredients:
+  - Name: Flour
+    <type>k__BackingField: 0
+    IngredientImage: {fileID: 21300000, guid: cfc20ebacd65a6843a52d6a41d9354af, type: 3}
+    IngredientPrice: 0
+    Count: 2
+  - Name: Onion
+    <type>k__BackingField: 1
+    IngredientImage: {fileID: 21300000, guid: c5c8616ac623178449734687e53006b4, type: 3}
+    IngredientPrice: 0
+    Count: 3
+  - Name: Tomato
+    <type>k__BackingField: 2
+    IngredientImage: {fileID: 21300000, guid: 62352a65145f7554baf8cc2f01a2e15d, type: 3}
+    IngredientPrice: 0
+    Count: 2
+  - Name: Cheese
+    <type>k__BackingField: 4
+    IngredientImage: {fileID: 21300000, guid: 66a6b2afc9826d8469e91b66386ad62a, type: 3}
+    IngredientPrice: 0
+    Count: 3
+  - Name: Ketchup
+    <type>k__BackingField: 12
+    IngredientImage: {fileID: 21300000, guid: e1272a0facbafd346970ffb581e71eaa, type: 3}
+    IngredientPrice: 0
+    Count: 1
+  - Name: Meat
+    <type>k__BackingField: 3
+    IngredientImage: {fileID: 21300000, guid: ddbed7f5e9cc8ce4c885c6a29511bb96, type: 3}
+    IngredientPrice: 0
+    Count: 1
+  CurrentImagePath: 

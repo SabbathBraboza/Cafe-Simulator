@@ -12,19 +12,40 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 62cee34adb0a2534aa74293e09a6b70b, type: 3}
   m_Name: Vada Pav
   m_EditorClassIdentifier: 
-  sprite: {fileID: 21300000, guid: bace2734181ffc741979ec5794122bcb, type: 3}
+  RecipeImage: {fileID: 21300000, guid: bace2734181ffc741979ec5794122bcb, type: 3}
+  ProductPrice: 25
+  productObject: {fileID: 0}
+  Veg: 1
+  Non_Veg: 0
+  Other: 0
+  BuildSeconds: 0
+  BuildMinutes: 30
+  OrderSeconds: 0
+  OrderMinutes: 1
   Ingredients:
-  - <type>k__BackingField: 0
-    Count: 1
-  - <type>k__BackingField: 1
-    Count: 0
-  - <type>k__BackingField: 2
-    Count: 0
-  - <type>k__BackingField: 3
-    Count: 0
-  - <type>k__BackingField: 4
-    Count: 0
-  - <type>k__BackingField: 5
+  - Name: Flour
+    <type>k__BackingField: 0
+    IngredientImage: {fileID: 21300000, guid: cfc20ebacd65a6843a52d6a41d9354af, type: 3}
+    IngredientPrice: 0
     Count: 2
-  - <type>k__BackingField: 6
+  - Name: Onion
+    <type>k__BackingField: 1
+    IngredientImage: {fileID: 21300000, guid: c5c8616ac623178449734687e53006b4, type: 3}
+    IngredientPrice: 0
+    Count: 3
+  - Name: Ketchup
+    <type>k__BackingField: 12
+    IngredientImage: {fileID: 21300000, guid: e1272a0facbafd346970ffb581e71eaa, type: 3}
+    IngredientPrice: 0
     Count: 1
+  - Name: Mix_Spices
+    <type>k__BackingField: 11
+    IngredientImage: {fileID: 21300000, guid: d0bbcdae1e319974c862621aebfc066e, type: 3}
+    IngredientPrice: 0
+    Count: 2
+  - Name: Mint
+    <type>k__BackingField: 21
+    IngredientImage: {fileID: 21300000, guid: 2d1babda0f997ec459912a2120d79902, type: 3}
+    IngredientPrice: 0
+    Count: 2
+  CurrentImagePath: 
