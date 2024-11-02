@@ -584,7 +584,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: Ingredient Name
+  m_text: 
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 69fe9e8d31b768a48bfbd4d2c0a015b6, type: 2}
   m_sharedMaterial: {fileID: 141564085778294137, guid: 69fe9e8d31b768a48bfbd4d2c0a015b6,
@@ -612,7 +612,7 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 17.55
+  m_fontSize: 36
   m_fontSizeBase: 36
   m_fontWeight: 400
   m_enableAutoSizing: 1
@@ -919,7 +919,7 @@ GameObject:
   m_Component:
   - component: {fileID: 7936747053134425938}
   - component: {fileID: 3547998776334071487}
-  - component: {fileID: 3747102519535985925}
+  - component: {fileID: 7257393322380780729}
   m_Layer: 0
   m_Name: Ingredients Adder
   m_TagString: Untagged
@@ -966,7 +966,7 @@ MonoBehaviour:
     type: 3}
   Add: {fileID: 2330020383662426699}
   Remove: {fileID: 895219664461545068}
---- !u!114 &3747102519535985925
+--- !u!114 &7257393322380780729
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}

@@ -12,7 +12,7 @@ public class Recipe_Display : MonoBehaviour
     [SerializeField] private int TotalIngredientCount;
 
     [Header("Ingredient:")]
-    [SerializeField] private Ingredient_Display IngredientDisplayRef;
+    [SerializeField] private IngredientDisplay IngredientDisplayRef;
     [SerializeField] private RectTransform ContentIngredient;
 
     public float Height => SelfRect.sizeDelta.y;

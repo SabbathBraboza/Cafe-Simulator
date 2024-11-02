@@ -4,15 +4,15 @@ using UnityEngine.UI;
 
 public class Ingredient_Adder : MonoBehaviour
 {
-    [SerializeField] private Ingredient_Display IngredientDisplay;
+    [SerializeField] private IngredientDisplay IngredientDisplay;
     [SerializeField] private Button Add, Remove;
 
     public Button.ButtonClickedEvent OnAdd => Add.onClick;
     public Button.ButtonClickedEvent OnRemove => Remove.onClick;
 
-    private void Reset() => IngredientDisplay = GetComponent<Ingredient_Display>();
+    private void Reset() => IngredientDisplay = GetComponent<IngredientDisplay>();
 
-    public void DisplayAs(Ingredient Value) => IngredientDisplay.DisplayAs(Value, false);
+    public void DisplayAs(Ingredient recipe) => IngredientDisplay.DisplayAs(recipe, false);
 
     public void IncementValue(Ingredient Value) => IngredientDisplay.SetCount(Value.Count);
    

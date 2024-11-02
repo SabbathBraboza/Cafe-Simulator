@@ -3,7 +3,7 @@ using TMPro;
 using UnityEngine;
 using UnityEngine.UI;
 
-public class Ingredient_Display : MonoBehaviour
+public class IngredientDisplay : MonoBehaviour
 {
     [SerializeField] private TextMeshProUGUI title;
     [SerializeField] private TextMeshProUGUI value;
@@ -12,16 +12,15 @@ public class Ingredient_Display : MonoBehaviour
     [Button]
     private void Start() => title.text = name;
     
-    public void DisplayAs(Ingredient recipe, bool Check)
+    public void DisplayAs(Ingredient recipe, bool Check=true)
     {
         if(Check && recipe.Count == 0)
         {
             Destroy(this.gameObject);
             return;
         }
-
-        gameObject.name = recipe.type.ToString();
         title.text = recipe.type.ToString();
+        gameObject.name = title.text;
         SetCount(recipe.Count);
         Image.sprite = recipe.IngredientImage;
     }

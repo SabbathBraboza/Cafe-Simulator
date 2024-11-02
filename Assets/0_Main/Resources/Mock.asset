@@ -22,5 +22,115 @@ MonoBehaviour:
   BuildMinutes: 0
   OrderSeconds: 0
   OrderMinutes: 0
-  Ingredients: []
+  Ingredients:
+  - Name: 
+    <type>k__BackingField: 0
+    IngredientImage: {fileID: 0}
+    IngredientPrice: 0
+    Count: 0
+  - Name: 
+    <type>k__BackingField: 1
+    IngredientImage: {fileID: 0}
+    IngredientPrice: 0
+    Count: 0
+  - Name: 
+    <type>k__BackingField: 2
+    IngredientImage: {fileID: 0}
+    IngredientPrice: 0
+    Count: 0
+  - Name: 
+    <type>k__BackingField: 3
+    IngredientImage: {fileID: 0}
+    IngredientPrice: 0
+    Count: 0
+  - Name: 
+    <type>k__BackingField: 4
+    IngredientImage: {fileID: 0}
+    IngredientPrice: 0
+    Count: 0
+  - Name: 
+    <type>k__BackingField: 5
+    IngredientImage: {fileID: 0}
+    IngredientPrice: 0
+    Count: 0
+  - Name: 
+    <type>k__BackingField: 6
+    IngredientImage: {fileID: 0}
+    IngredientPrice: 0
+    Count: 0
+  - Name: 
+    <type>k__BackingField: 7
+    IngredientImage: {fileID: 0}
+    IngredientPrice: 0
+    Count: 0
+  - Name: 
+    <type>k__BackingField: 8
+    IngredientImage: {fileID: 0}
+    IngredientPrice: 0
+    Count: 0
+  - Name: 
+    <type>k__BackingField: 9
+    IngredientImage: {fileID: 0}
+    IngredientPrice: 0
+    Count: 0
+  - Name: 
+    <type>k__BackingField: 10
+    IngredientImage: {fileID: 0}
+    IngredientPrice: 0
+    Count: 0
+  - Name: 
+    <type>k__BackingField: 11
+    IngredientImage: {fileID: 0}
+    IngredientPrice: 0
+    Count: 0
+  - Name: 
+    <type>k__BackingField: 12
+    IngredientImage: {fileID: 0}
+    IngredientPrice: 0
+    Count: 0
+  - Name: 
+    <type>k__BackingField: 13
+    IngredientImage: {fileID: 0}
+    IngredientPrice: 0
+    Count: 0
+  - Name: 
+    <type>k__BackingField: 14
+    IngredientImage: {fileID: 0}
+    IngredientPrice: 0
+    Count: 0
+  - Name: 
+    <type>k__BackingField: 16
+    IngredientImage: {fileID: 0}
+    IngredientPrice: 0
+    Count: 0
+  - Name: 
+    <type>k__BackingField: 17
+    IngredientImage: {fileID: 0}
+    IngredientPrice: 0
+    Count: 0
+  - Name: 
+    <type>k__BackingField: 18
+    IngredientImage: {fileID: 0}
+    IngredientPrice: 0
+    Count: 0
+  - Name: 
+    <type>k__BackingField: 19
+    IngredientImage: {fileID: 0}
+    IngredientPrice: 0
+    Count: 0
+  - Name: 
+    <type>k__BackingField: 20
+    IngredientImage: {fileID: 0}
+    IngredientPrice: 0
+    Count: 0
+  - Name: 
+    <type>k__BackingField: 21
+    IngredientImage: {fileID: 0}
+    IngredientPrice: 0
+    Count: 0
+  - Name: 
+    <type>k__BackingField: 22
+    IngredientImage: {fileID: 0}
+    IngredientPrice: 0
+    Count: 0
   CurrentImagePath: Assets/0_Main/Resources/Ingredient

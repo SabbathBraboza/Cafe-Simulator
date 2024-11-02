@@ -19,7 +19,7 @@ public class OrderSystem : MonoBehaviour
 
     private void Start()
     {
-        RecipesRef = Resources.LoadAll<Recipe>("Recipe");
+        RecipesRef = Resources.LoadAll<Recipe>("Recipes");
         NotInteract = new GameObject[4];
         OnGenerateRandomRecipes();
     }
@@ -38,12 +38,12 @@ public class OrderSystem : MonoBehaviour
             int Index = i;   
             //Pick Random Recipe
             int RandomIndex = Random.Range(0, RecipesRef.Length);
-            Recipe CurrentOrder = RecipesRef[RandomIndex];
+            Recipe current = RecipesRef[RandomIndex];
             RandomNamesRef.GetName();
 
             //Instantiate and Display The recipe
             var Order = Instantiate(OrderRef, Content);
-            Order.ProductDisplayAs(CurrentOrder, RandomNamesRef.CurrentNames, CurrentOrder.OrderMinutes, CurrentOrder.OrderSeconds, Index, this);
+            Order.ProductDisplayAs(current, RandomNamesRef.CurrentNames, current.OrderMinutes, current.OrderSeconds, Index, this);
             NotInteract[Index] = Order.NotInteractable;
         }
     }

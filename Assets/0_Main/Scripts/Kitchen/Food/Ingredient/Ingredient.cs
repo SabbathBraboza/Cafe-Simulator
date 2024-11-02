@@ -12,7 +12,7 @@ public struct Ingredient
     [SerializeField] public Sprite IngredientImage;
     public int IngredientPrice;
 
-    public const int Max = 15;
+    public const int Max = 10;
     [Range(0, Max)] public int Count;
 
     [ExecuteInEditMode]

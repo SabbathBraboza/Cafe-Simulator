@@ -24,7 +24,8 @@ public class CookingBook : MonoBehaviour
 
     private void Start()
     {
-        Initializerecipe();    
+        CookingIngredients();
+        Initializerecipe();
     }
 
     [Button]
@@ -51,7 +52,7 @@ public class CookingBook : MonoBehaviour
         {
             int Index = i;
             var Incrementor = Instantiate(Adder, Contents);
-            Incrementor.DisplayAs(MockRecipe.Ingredients[Index]);
+           Incrementor.DisplayAs(MockRecipe.Ingredients[Index]);
             Incrementor.SetFunctionilty
            (
              () =>
@@ -139,9 +140,9 @@ public class CookingBook : MonoBehaviour
         for(int i = 0; i < MockRecipe.Ingredients.Length; i++) {
 
             int Temp = i;
-            InventoryRef.IngredientCall(i, MockRecipe.Ingredients[i].Count);
-            MockRecipe.Ingredients[i].Count = 0;
-            MockIngredientCount[i] = 0;
+            InventoryRef.IngredientCall(Temp, MockRecipe.Ingredients[Temp].Count);
+            MockRecipe.Ingredients[Temp].Count = 0;
+            MockIngredientCount[Temp] = 0;
         }
         CookingIngredients();
     }
