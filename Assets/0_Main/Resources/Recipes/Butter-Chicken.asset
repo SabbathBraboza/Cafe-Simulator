@@ -30,7 +30,7 @@ MonoBehaviour:
     Count: 3
   - Name: Chicken
     <type>k__BackingField: 7
-    IngredientImage: {fileID: 21300000, guid: c5c8616ac623178449734687e53006b4, type: 3}
+    IngredientImage: {fileID: 21300000, guid: eb89fe8cb59730e4f996969915bc0c93, type: 3}
     IngredientPrice: 0
     Count: 7
   - Name: Butter

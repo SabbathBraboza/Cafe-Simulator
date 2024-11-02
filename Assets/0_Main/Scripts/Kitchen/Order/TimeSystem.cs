@@ -4,74 +4,60 @@ using UnityEngine;
 
 public class TimeSystem : MonoBehaviour
 {
-    [SerializeField] private TMP_Text TimerText;
+    [SerializeField] internal bool OrderStatus;
 
-    private bool isCoolingDown = false;
-    public bool OrderCancel;
-    private float CoolDownDuration = 10f; // 30 Seconds
+    [Space(5f)]
+    [Header("Values:")]
+    [SerializeField] private int CurrentMins;
+    [SerializeField] private int CurrentSecs;
+    [SerializeField] private int CurrentOrderRemove;
 
-    [Header("Reference:")]
-    [SerializeField] private Recipe CurretRecipe;
-    [SerializeField] private OrderVerification OrderChecking;
-    //[SerializeField] private IMessage MessageCallRef;
-    [SerializeField] private UnityEngine.Color Origin;
+    [Header("UI: Text")]
+    [SerializeField] private TMP_Text TimeRemainingText;
 
-    public void EndToBuild(Recipe recipe)
+    [Header("References:")]
+    [SerializeField] internal GameObject CurrentOrder;
+    [SerializeField] private OrderSystem CurrentOrderSystemRef;
+
+    public void UpdateTime(int mins,int secs, GameObject order,int orderNumber)
     {
-        OrderChecking.OrderVerifyAndBuild(CurretRecipe);
-        // MessageCallRef.PopUp(CurretRecipe.name + "Is Ready To Server");
-        TimerText.text = CurretRecipe.name + "Is Ready";
-        Invoke(nameof(ResetText), 4);
+        CurrentMins = mins;
+        CurrentSecs = secs;
+        CurrentOrder = order;
+        CurrentOrderRemove = orderNumber;
+        StartCoroutine(StartCountDown());
     }
 
-    public void UpdateTimeToReady(Recipe recipe)
+    IEnumerator StartCountDown()
     {
-        OrderCancel = false;
-        Origin = TimerText.color;
-        CurretRecipe = recipe;
-        StartCoroutine(CoolDownTimer());
-    }
-
-    private IEnumerator CoolDownTimer()
-    {
-        isCoolingDown = true;
-        float RemainingTime = CoolDownDuration;
-
-        while(RemainingTime > 0 && !OrderCancel) 
+        while(CurrentMins > 0 || CurrentSecs > 0 && !OrderStatus)
         {
-            if(RemainingTime>15)
-            {
-                TimerText.color = UnityEngine.Color.yellow;
-            }
-            else
-            {
-                TimerText.color = UnityEngine.Color.green;
-            }
-
-            TimerText.text = $"Cooked in : 00:{RemainingTime:F0} Seconds";
+            TimeRemainingText.text = $"{CurrentMins:D2}:{CurrentSecs:D2}";
             yield return new WaitForSeconds(1);
-            RemainingTime -= 1;
+            CurrentSecs--;
+
+            if(CurrentSecs < 0 & !OrderStatus) 
+            {
+                CurrentSecs = 59;
+                CurrentMins--;
+            }
         }
 
-        TimerText.text = "";
-        isCoolingDown = false;
-
-        if(OrderCancel)
+        TimeRemainingText.text = "00:00";
+        if(OrderStatus)
         {
-            TimerText.text = "Time Out Failed to Placed Order";
-            TimerText.color = UnityEngine.Color.red;
-            Invoke(nameof(ResetText),4);
+            Debug.Log("Order Completed");
         }
         else
         {
-            EndToBuild(CurretRecipe);
+            CurrentOrderSystemRef.OrderVerRef.foodNotificationref.OrderCancel = true;
+            CurrentOrderSystemRef.OrderVerRef.FailedToPlacedOrder();
         }
+
+        CurrentOrderSystemRef.ClearOrderTrash(CurrentOrderRemove);
+        DestroyOrder(CurrentOrder);
+        CurrentOrderSystemRef.NewOrder();
     }
 
-    private void ResetText()
-    {
-        TimerText.text = "Cooking Status";
-        TimerText.color = Origin;
-    }
-
+    public void DestroyOrder(GameObject order) => Destroy(order);
 }

@@ -5,14 +5,14 @@ public class OrderVerification : MonoBehaviour
     [SerializeField] private BakeRecipe BakeRecipeRef;
     [SerializeField] private TimeSystem TimeSystemRef;
     [SerializeField] private OnlinePayment OnlinePaymentRef;
-    [SerializeField] private FoodNotification foodNotificationref;
+    [SerializeField] internal FoodNotification foodNotificationref;
 
-    private string CurrentCustomerName;
+    public string CurrentCustomerName;
     public int ProductPrice;
 
     public void OrderVerifyAndBuild(Recipe recipe)
     {
-        //if(recipe.name == TimeSystemRef.CurrentOrder.name)
+        //if (recipe.name == TimeSystemRef.CurrentOrder.name)
         //{
         //    BakeRecipeRef.BuildBakesRecipe(recipe);
 

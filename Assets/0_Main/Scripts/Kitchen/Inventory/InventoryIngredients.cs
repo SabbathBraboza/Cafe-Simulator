@@ -5,7 +5,7 @@ public class InventoryIngredients : MonoBehaviour
 {
     [SerializeField] private InventoryDisplay inventoryDisplay;
     [SerializeField] private RectTransform Content;
-    [SerializeField] private Recipe InventoryIngredientContents;
+    [SerializeField] internal Recipe InventoryIngredientContents;
 
     private void Start() => InventoryIngredientSection();
 

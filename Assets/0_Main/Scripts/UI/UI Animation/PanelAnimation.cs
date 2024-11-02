@@ -1,3 +1,4 @@
+using System.Collections;
 using UnityEngine;
 
 public class PanelAnimation : MonoBehaviour
@@ -8,11 +9,17 @@ public class PanelAnimation : MonoBehaviour
       public float IntroDuration = 0.8f;
       public float DealyGap = 0.2f;
 
-      [Header("GameObjects:")]
-     [SerializeField] private RectTransform IPadPanel;
+    [Space(5f)]
+    [Header("GameObjects:")]
+      [SerializeField] private RectTransform IPadPanel;
       [SerializeField] private RectTransform SettingPanel;
       [SerializeField] private RectTransform AppPanel;
 
+    [Space(5f)]
+    [Header("Message Panel:")]
+    [SerializeField] private RectTransform Message;
+
+    [Space(5f)]
       [Header("App Position RectTransform:")]
       [SerializeField] private RectTransform SettingAppPosition;
       [SerializeField] private RectTransform AppPosition;
@@ -48,4 +55,24 @@ public class PanelAnimation : MonoBehaviour
             AppPanel.LeanMove(value ? Vector3.one : Vector3.zero, 0.1f).setEase(LeanType).setDelay(0.5f);
         }
     }
+
+    #region Message Panel Animation
+    public void MessageShowPanel(bool value)
+    {
+        Message.LeanMoveY(value ? -100f : 0f, 0.8f).setEase(LeanType);
+        Message.LeanScale(value ? Vector2.one : Vector2.zero, 0.8f).setEase(LeanType).setOnComplete(()=> StartCoroutine(UnShow()));
+    }
+
+    IEnumerator UnShow()
+    {
+        yield return new WaitForSeconds(2.5f);
+        MessageShowPanel(false);
+    }
+
+    public void MessageUnShowPanel(bool value)
+    {
+        Message.LeanScale(value ? Vector2.one : Vector2.zero, 0.8f).setEase(LeanType);
+        Message.LeanMoveX(value ? -100f : -18, 0.8f).setEase(LeanType);
+    }
+    #endregion
 }

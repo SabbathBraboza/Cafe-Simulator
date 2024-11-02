@@ -54,10 +54,10 @@ public class Order : MonoBehaviour
 
     public void OrderPlacedProcess(int mins, int secs)
     {
-       // OrderSystemRef.TimeSystemRef.UpdateTime(mins, secs, this.gameObject,OrderNumber);
+        OrderSystemRef.TimeSystemRef.UpdateTime(mins, secs, this.gameObject,OrderNumber);
         OrderSystemRef.OrderNotInteract(OrderNumber);
-        // OrderSystemRef.orderVerifyRef.CurrentCustomerName = CustomerName.text;
-        // OrderSystemRef.orderVerifyRef.ProductPrice = int.TryParse(ProductPrice.text, out int price) ? price : 0;
+       OrderSystemRef.OrderVerRef.CurrentCustomerName = CustomerName.text;
+        OrderSystemRef.OrderVerRef.ProductPrice = int.TryParse(ProductPrice.text, out int price) ? price : 0;
         ToggelRef.interactable = false;
     }
 }

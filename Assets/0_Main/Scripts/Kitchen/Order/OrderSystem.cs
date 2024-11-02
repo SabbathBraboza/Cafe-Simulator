@@ -15,7 +15,7 @@ public class OrderSystem : MonoBehaviour
     [SerializeField] private Order OrderRef;
     [SerializeField] internal TimeSystem TimeSystemRef;
     [SerializeField] private RandomNameCollection RandomNamesRef;
-    [SerializeField] private OrderVerification OrderVerRef;
+    [SerializeField] internal OrderVerification OrderVerRef;
 
     private void Start()
     {
@@ -95,5 +95,4 @@ public class OrderSystem : MonoBehaviour
     }
 
     public void ClearOrderTrash(int RemoveIndex) => NotInteract[RemoveIndex] = null;
-
 }

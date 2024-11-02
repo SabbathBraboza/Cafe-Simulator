@@ -92,7 +92,7 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 25.9
+  m_fontSize: 18
   m_fontSizeBase: 24
   m_fontWeight: 400
   m_enableAutoSizing: 1
@@ -746,7 +746,7 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 25.9
+  m_fontSize: 18
   m_fontSizeBase: 24
   m_fontWeight: 400
   m_enableAutoSizing: 1
@@ -919,6 +919,7 @@ GameObject:
   m_Component:
   - component: {fileID: 7936747053134425938}
   - component: {fileID: 3547998776334071487}
+  - component: {fileID: 3747102519535985925}
   m_Layer: 0
   m_Name: Ingredients Adder
   m_TagString: Untagged
@@ -961,9 +962,25 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e6ff80627cabd484dafad3ae2e485e03, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  IngredientDisplay: {fileID: 0}
+  IngredientDisplay: {fileID: 8509296735766393155, guid: 64cb66711c74b5847b11c10b110cfd62,
+    type: 3}
   Add: {fileID: 2330020383662426699}
   Remove: {fileID: 895219664461545068}
+--- !u!114 &3747102519535985925
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6827777996612128027}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 69596a4992949c6489132edbd8f42825, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  title: {fileID: 8437416324421647500}
+  value: {fileID: 156807166000054730}
+  Image: {fileID: 1427412714380997042}
 --- !u!1 &7692276500043992120
 GameObject:
   m_ObjectHideFlags: 0

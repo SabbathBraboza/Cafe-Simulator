@@ -342,6 +342,7 @@ GameObject:
   - component: {fileID: 3795778143219290861}
   - component: {fileID: 3503197563732002203}
   - component: {fileID: 4769606398450940270}
+  - component: {fileID: 5623692246757934067}
   m_Layer: 0
   m_Name: Cook Recipe Display
   m_TagString: Untagged
@@ -408,6 +409,24 @@ MonoBehaviour:
   m_FillOrigin: 0
   m_UseSpriteMesh: 0
   m_PixelsPerUnitMultiplier: 1
+--- !u!114 &5623692246757934067
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7183913213068499884}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 952b6c36ca955624685edadf21fd358d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  image: {fileID: 2829120717416024060}
+  Title: {fileID: 7196171593382693564}
+  BuildButton: {fileID: 4973743835640031571}
+  BakeRecipeRef: {fileID: 0}
+  CookingBookRef: {fileID: 0}
+  FoodNotify: {fileID: 0}
 --- !u!1 &7207532441133671383
 GameObject:
   m_ObjectHideFlags: 0
