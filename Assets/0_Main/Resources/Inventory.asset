@@ -18,6 +18,10 @@ MonoBehaviour:
   Veg: 0
   Non_Veg: 0
   Other: 1
+  BuildSeconds: 0
+  BuildMinutes: 0
+  OrderSeconds: 0
+  OrderMinutes: 0
   Ingredients:
   - Name: Flour
     <type>k__BackingField: 0
@@ -127,11 +131,6 @@ MonoBehaviour:
   - Name: Mint
     <type>k__BackingField: 21
     IngredientImage: {fileID: 21300000, guid: 2d1babda0f997ec459912a2120d79902, type: 3}
-    IngredientPrice: 10
-    Count: 4
-  - Name: Egg
-    <type>k__BackingField: 22
-    IngredientImage: {fileID: 21300000, guid: 590feb014a9493844bd37ebbd1e615eb, type: 3}
     IngredientPrice: 10
     Count: 4
   CurrentImagePath: 

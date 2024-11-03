@@ -92,7 +92,7 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 18
+  m_fontSize: 19.35
   m_fontSizeBase: 24
   m_fontWeight: 400
   m_enableAutoSizing: 1
@@ -318,8 +318,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 1, y: 1}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: -105, y: -24.1151}
-  m_SizeDelta: {x: 190, y: 42.2304}
+  m_AnchoredPosition: {x: -99.389, y: -18.469496}
+  m_SizeDelta: {x: 178.78, y: 30.939}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!1 &2057615584823062069
 GameObject:
@@ -355,8 +355,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 0.4}
-  m_AnchoredPosition: {x: 0, y: -0.16899872}
-  m_SizeDelta: {x: 0, y: -0.33799934}
+  m_AnchoredPosition: {x: -19.434715, y: -0.16899872}
+  m_SizeDelta: {x: -38.8695, y: -0.338}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &7871626864947586937
 CanvasRenderer:
@@ -413,11 +413,11 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 20
-  m_fontSizeBase: 20
+  m_fontSize: 15
+  m_fontSizeBase: 15
   m_fontWeight: 400
   m_enableAutoSizing: 0
-  m_fontSizeMin: 10
+  m_fontSizeMin: 5
   m_fontSizeMax: 72
   m_fontStyle: 1
   m_HorizontalAlignment: 1
@@ -617,7 +617,7 @@ MonoBehaviour:
   m_fontWeight: 400
   m_enableAutoSizing: 1
   m_fontSizeMin: 10
-  m_fontSizeMax: 72
+  m_fontSizeMax: 40
   m_fontStyle: 1
   m_HorizontalAlignment: 1
   m_VerticalAlignment: 512
@@ -746,7 +746,7 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 18
+  m_fontSize: 19.35
   m_fontSizeBase: 24
   m_fontWeight: 400
   m_enableAutoSizing: 1
@@ -962,8 +962,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e6ff80627cabd484dafad3ae2e485e03, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  IngredientDisplay: {fileID: 8509296735766393155, guid: 64cb66711c74b5847b11c10b110cfd62,
-    type: 3}
+  IngredientDisplay: {fileID: 7257393322380780729}
   Add: {fileID: 2330020383662426699}
   Remove: {fileID: 895219664461545068}
 --- !u!114 &7257393322380780729

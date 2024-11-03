@@ -12,7 +12,7 @@ public class IngredientDisplay : MonoBehaviour
     [Button]
     private void Start() => title.text = name;
     
-    public void DisplayAs(Ingredient recipe, bool Check=true)
+    public void Display(Ingredient recipe, bool Check=true)
     {
         if(Check && recipe.Count == 0)
         {
@@ -20,7 +20,7 @@ public class IngredientDisplay : MonoBehaviour
             return;
         }
         title.text = recipe.type.ToString();
-        gameObject.name = title.text;
+        gameObject.name = recipe.type.ToString();
         SetCount(recipe.Count);
         Image.sprite = recipe.IngredientImage;
     }

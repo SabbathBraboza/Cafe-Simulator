@@ -9,7 +9,7 @@ public class CookingBook : MonoBehaviour
 
     [Space(5f)]
     [Header("References:")]
-    [SerializeField] private Ingredient_Adder Adder;
+    [SerializeField] private IngredientAdder Adder;
     [SerializeField] private Recipe MockRecipe;
     [SerializeField] private Recipe[] RecipeRef;
     [SerializeField] private CookProduct CookProductRef;
@@ -52,7 +52,7 @@ public class CookingBook : MonoBehaviour
         {
             int Index = i;
             var Incrementor = Instantiate(Adder, Contents);
-           Incrementor.DisplayAs(MockRecipe.Ingredients[Index]);
+           Incrementor.DisplayIngredients(MockRecipe.Ingredients[Index]);
             Incrementor.SetFunctionilty
            (
              () =>

@@ -30,7 +30,7 @@ public class Recipe_Display : MonoBehaviour
         for(int i= 0; i < recipe.Ingredients.Length; i++)
         {
             var CurrentIngredient = Instantiate(IngredientDisplayRef, ContentIngredient);
-            CurrentIngredient.DisplayAs(recipe.Ingredients[i],true);
+            CurrentIngredient.Display(recipe.Ingredients[i],true);
         }
 
         for(int i= 0;i < ContentIngredient.childCount;i++)

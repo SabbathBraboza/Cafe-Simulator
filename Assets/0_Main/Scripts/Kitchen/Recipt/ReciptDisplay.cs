@@ -8,6 +8,6 @@ public class ReciptDisplay : MonoBehaviour
     public void DispalyRecipt(string Name,int Amount)
     {
         var SpawnRecipts = Instantiate(ReciptPerfabRef, Content);
-        SpawnRecipts.ReciptsActive(name, Amount);
+        SpawnRecipts.ReciptsActive(Name, Amount);
     }
 }

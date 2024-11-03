@@ -22,7 +22,7 @@ public struct Ingredient
     {
         Flour,Onion,Tomato,Meat,Cheese,Potate,Rice,
         Chicken,Butter,Ghee,Chana,Mix_Spices,Ketchup,Bread_bun,Lettuce,
-        Capsicum,oil, Cabbage, Carrot, Corns,Ginger,Mint,Egg
+        Capsicum,oil, Cabbage, Carrot, Corns,Ginger,Mint
     }
 
 }
