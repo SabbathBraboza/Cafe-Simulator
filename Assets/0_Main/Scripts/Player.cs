@@ -1,7 +1,7 @@
 using Emp37.Utility.Singleton;
 using UnityEngine;
 using UnityEngine.AI;
-using UnityEngine.Rendering.Universal;
+
 
 public class Player : MonoBehaviour
 {
