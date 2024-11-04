@@ -51,11 +51,11 @@ public class ShopProduct : MonoBehaviour
         MaxCountLimit = 15 - CurrentInventory.Ingredients[Index].Count;
         gameObject.name = CurrentInventory.Ingredients[Index].type.ToString();
         ProductName.text = CurrentInventory.Ingredients[Index].type.ToString();
-        ProductPrice.text = "Rs: " + CurrentInventory.Ingredients[Index].IngredientPrice.ToString() +"(x1)";
-        ProductImage.sprite = CurrentInventory.Ingredients[Index].IngredientImage;
+        ProductPrice.text = "Rs: " + CurrentInventory.Ingredients[Index].Price.ToString() +"(x1)";
+        ProductImage.sprite = CurrentInventory.Ingredients[Index].Image;
 
         ProductID = Index;
-        CurrentProductAmount = CurrentInventory.Ingredients[Index].IngredientPrice;
+        CurrentProductAmount = CurrentInventory.Ingredients[Index].Price;
         InvetoryRefObject = CurrentInventory;
     }
 

@@ -23,19 +23,114 @@ MonoBehaviour:
   OrderSeconds: 0
   OrderMinutes: 5
   Ingredients:
+  - Name: Flour
+    <type>k__BackingField: 0
+    Image: {fileID: 21300000, guid: cfc20ebacd65a6843a52d6a41d9354af, type: 3}
+    Price: 0
+    Count: 0
+  - Name: Onion
+    <type>k__BackingField: 1
+    Image: {fileID: 21300000, guid: c5c8616ac623178449734687e53006b4, type: 3}
+    Price: 0
+    Count: 0
+  - Name: Tomato
+    <type>k__BackingField: 2
+    Image: {fileID: 21300000, guid: 62352a65145f7554baf8cc2f01a2e15d, type: 3}
+    Price: 0
+    Count: 0
+  - Name: Meat
+    <type>k__BackingField: 3
+    Image: {fileID: 21300000, guid: ddbed7f5e9cc8ce4c885c6a29511bb96, type: 3}
+    Price: 0
+    Count: 0
+  - Name: Cheese
+    <type>k__BackingField: 4
+    Image: {fileID: 21300000, guid: 66a6b2afc9826d8469e91b66386ad62a, type: 3}
+    Price: 0
+    Count: 0
+  - Name: Potato
+    <type>k__BackingField: 5
+    Image: {fileID: 21300000, guid: 0aab1bdbd6952aa49b4cb865632f167e, type: 3}
+    Price: 0
+    Count: 0
+  - Name: Rice
+    <type>k__BackingField: 6
+    Image: {fileID: 21300000, guid: 77e4ffea212bac5438b8dd40c6b62ed3, type: 3}
+    Price: 0
+    Count: 0
   - Name: Chicken
     <type>k__BackingField: 7
-    IngredientImage: {fileID: 21300000, guid: eb89fe8cb59730e4f996969915bc0c93, type: 3}
-    IngredientPrice: 0
-    Count: 4
-  - Name: Mix_Spices
-    <type>k__BackingField: 11
-    IngredientImage: {fileID: 21300000, guid: d0bbcdae1e319974c862621aebfc066e, type: 3}
-    IngredientPrice: 0
-    Count: 6
+    Image: {fileID: 21300000, guid: eb89fe8cb59730e4f996969915bc0c93, type: 3}
+    Price: 0
+    Count: 3
   - Name: Butter
     <type>k__BackingField: 8
-    IngredientImage: {fileID: 21300000, guid: 5d371da55691b69408ff1d35904bf5fc, type: 3}
-    IngredientPrice: 0
+    Image: {fileID: 21300000, guid: 5d371da55691b69408ff1d35904bf5fc, type: 3}
+    Price: 0
+    Count: 1
+  - Name: Ghee
+    <type>k__BackingField: 9
+    Image: {fileID: 21300000, guid: c0b6fb1ca66e5074488548b702f316f9, type: 3}
+    Price: 0
+    Count: 0
+  - Name: Chana
+    <type>k__BackingField: 10
+    Image: {fileID: 21300000, guid: 0cf70b06421f0d54e96a79850077e74a, type: 3}
+    Price: 0
+    Count: 0
+  - Name: Mix_Spices
+    <type>k__BackingField: 11
+    Image: {fileID: 21300000, guid: d0bbcdae1e319974c862621aebfc066e, type: 3}
+    Price: 0
     Count: 2
-  CurrentImagePath: 
+  - Name: Ketchup
+    <type>k__BackingField: 12
+    Image: {fileID: 21300000, guid: e1272a0facbafd346970ffb581e71eaa, type: 3}
+    Price: 0
+    Count: 0
+  - Name: Bread_bun
+    <type>k__BackingField: 13
+    Image: {fileID: 21300000, guid: 63d60144ab064d647921acbb239a8dcd, type: 3}
+    Price: 0
+    Count: 0
+  - Name: Lettuce
+    <type>k__BackingField: 14
+    Image: {fileID: 21300000, guid: 7c061b0e997c68b4e846ce9e2fb18f17, type: 3}
+    Price: 0
+    Count: 0
+  - Name: Capsicum
+    <type>k__BackingField: 15
+    Image: {fileID: 21300000, guid: bf0bb66a6f537a34b8cf7431fae59784, type: 3}
+    Price: 0
+    Count: 0
+  - Name: oil
+    <type>k__BackingField: 16
+    Image: {fileID: 21300000, guid: 719902b3a43da6548ad9e49b2bdee9ea, type: 3}
+    Price: 0
+    Count: 0
+  - Name: Cabbage
+    <type>k__BackingField: 17
+    Image: {fileID: 21300000, guid: d945f9274e2b56841aaeefea6d38711f, type: 3}
+    Price: 0
+    Count: 0
+  - Name: Carrot
+    <type>k__BackingField: 18
+    Image: {fileID: 21300000, guid: 9d8d271e0ad748e4a809a0fc67b08a02, type: 3}
+    Price: 0
+    Count: 0
+  - Name: Corns
+    <type>k__BackingField: 19
+    Image: {fileID: 21300000, guid: 67f16be67d9513f4db14cc2e4a6ae8f7, type: 3}
+    Price: 0
+    Count: 0
+  - Name: Ginger
+    <type>k__BackingField: 20
+    Image: {fileID: 21300000, guid: 58d3b9f39eb423947bba89cf1bf9fa53, type: 3}
+    Price: 0
+    Count: 0
+  - Name: Mint
+    <type>k__BackingField: 21
+    Image: {fileID: 21300000, guid: 2d1babda0f997ec459912a2120d79902, type: 3}
+    Price: 0
+    Count: 1
+  CurrentImagePath: Assets/0_Main/Resources/Ingredients/

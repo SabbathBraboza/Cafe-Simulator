@@ -23,13 +23,13 @@ public class InventoryDisplay : MonoBehaviour
 
         gameObject.name = ingredient.type.ToString();
         ProductName.text = ingredient.type.ToString();
-        ProductPrice.text = "RS:" + ingredient.IngredientPrice.ToString();
+        ProductPrice.text = "RS:" + ingredient.Price.ToString();
         ProductQuantity.text = "Quantity:" + ingredient.Count.ToString();
 
-        image.sprite = ingredient.IngredientImage;
+        image.sprite = ingredient.Image;
 
         ProductID = ProductiD;
-        CurrentProductAmount = ingredient.IngredientPrice;
+        CurrentProductAmount = ingredient.Price;
 
     }
 }

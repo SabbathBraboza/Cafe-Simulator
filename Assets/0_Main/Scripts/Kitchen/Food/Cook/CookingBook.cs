@@ -109,7 +109,7 @@ public class CookingBook : MonoBehaviour
             {
                 bool AllMatch = true;
 
-                for(int j = 0; i< recipe.Ingredients.Length; j++)
+                for(int j = 0; j< recipe.Ingredients.Length; j++)
                 {
                     if (MockIngredientCount[j] != recipe.Ingredients[j].Count)
                     {

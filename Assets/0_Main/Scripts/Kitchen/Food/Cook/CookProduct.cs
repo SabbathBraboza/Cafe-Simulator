@@ -24,7 +24,7 @@ public class CookProduct : MonoBehaviour
         GameObject CookRef = GameObject.FindGameObjectWithTag("CookArea");
         CookingBookRef = CookRef.GetComponent<CookingBook>();
 
-        // BuildButton.onClick.AddListener(CookingBookRef.InventoryIngredientCall);
+        BuildButton.onClick.AddListener(CookingBookRef.InventoryIngredientCall);
         BuildButton.onClick.AddListener(BuildFood);
     }
 

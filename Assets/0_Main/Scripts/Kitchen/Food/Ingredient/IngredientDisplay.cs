@@ -22,7 +22,7 @@ public class IngredientDisplay : MonoBehaviour
         title.text = recipe.type.ToString();
         gameObject.name = recipe.type.ToString();
         SetCount(recipe.Count);
-        Image.sprite = recipe.IngredientImage;
+        Image.sprite = recipe.Image;
     }
 
     public void SetCount(int Count) => value.text = "x" + Count;
