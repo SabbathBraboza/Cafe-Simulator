@@ -12,13 +12,13 @@ public class OrderVerification : MonoBehaviour
 
     public void OrderVerifyAndBuild(Recipe recipe)
     {
-        //if (recipe.name == TimeSystemRef.CurrentOrder.name)
-        //{
-        //    BakeRecipeRef.BuildBakesRecipe(recipe);
+        if (recipe.name == TimeSystemRef.CurrentOrder.name)
+        {
+            BakeRecipeRef.BuildBakesRecipes(recipe);
 
-        //    TimeSystemRef.OrderStatus = true;
-        //    PaymentToAccount((int)recipe.ProductPrice);
-        //}
+            TimeSystemRef.OrderStatus = true;
+            PayToAccount((int)recipe.ProductPrice);
+        }
     }
 
     public void PayToAccount(int amount) => OnlinePaymentRef.CreditPayment(amount,CurrentCustomerName);

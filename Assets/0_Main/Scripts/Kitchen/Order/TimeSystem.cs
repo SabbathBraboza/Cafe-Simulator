@@ -32,7 +32,7 @@ public class TimeSystem : MonoBehaviour
     {
         while(CurrentMins > 0 || CurrentSecs > 0 && !OrderStatus)
         {
-            TimeRemainingText.text = $"{CurrentMins:D2}:{CurrentSecs:D2}";
+            TimeRemainingText.text = $"Order Time:{CurrentMins:D2}:{CurrentSecs:D2}";
             yield return new WaitForSeconds(1);
             CurrentSecs--;
 
@@ -43,7 +43,7 @@ public class TimeSystem : MonoBehaviour
             }
         }
 
-        TimeRemainingText.text = "00:00";
+        TimeRemainingText.text = "Order Time: 00:00";
         if(OrderStatus)
         {
             Debug.Log("Order Completed");

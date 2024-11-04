@@ -14,7 +14,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   RecipeImage: {fileID: 21300000, guid: 9e020ac9dd1bf5e4eb8121ff1fa84e94, type: 3}
   ProductPrice: 300
-  productObject: {fileID: 0}
+  productObject: {fileID: 6078190068805737500, guid: 98bd2f296cfa04043a5fab26fb4e40ff,
+    type: 3}
   Veg: 0
   Non_Veg: 1
   Other: 0

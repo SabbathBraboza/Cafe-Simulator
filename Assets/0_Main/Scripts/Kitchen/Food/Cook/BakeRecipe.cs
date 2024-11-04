@@ -8,7 +8,7 @@ public class BakeRecipe : MonoBehaviour
 
     public void BuildBakesRecipes(Recipe recipe)
     {
-        //RecipeObject = recipe.ProductPerfab;
+        RecipeObject = recipe.productObject;
 
         int temp = Random.Range(0, ProductPosition.Length);
         if(RecipeObject != null)

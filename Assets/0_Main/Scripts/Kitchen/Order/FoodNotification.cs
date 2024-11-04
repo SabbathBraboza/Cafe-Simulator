@@ -14,13 +14,13 @@ public class FoodNotification : MonoBehaviour
     [Space(5f)]
     [Header("References:")]
     [SerializeField] private Recipe CurrentRecipe;
-    [SerializeField] private OrderVerification OrderCheckingRef;
+    [SerializeField] private OrderVerification OrderChecking;
     [SerializeField] private IMessage MessageRef;
     [SerializeField] private Color Origin;
 
     public void EndToBuild(Recipe recipe)
     {
-        OrderCheckingRef.OrderVerifyAndBuild(CurrentRecipe);
+        OrderChecking.OrderVerifyAndBuild(CurrentRecipe);
         MessageRef.PopUp(CurrentRecipe.name + "The Food Is Ready to Serve.");
         TimerText.text = CurrentRecipe.name + "Is Ready";
 

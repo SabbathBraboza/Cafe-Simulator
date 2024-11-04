@@ -37,7 +37,7 @@ MonoBehaviour:
     <type>k__BackingField: 2
     Image: {fileID: 21300000, guid: 62352a65145f7554baf8cc2f01a2e15d, type: 3}
     Price: 0
-    Count: 1
+    Count: 0
   - Name: Meat
     <type>k__BackingField: 3
     Image: {fileID: 21300000, guid: ddbed7f5e9cc8ce4c885c6a29511bb96, type: 3}
@@ -47,7 +47,7 @@ MonoBehaviour:
     <type>k__BackingField: 4
     Image: {fileID: 21300000, guid: 66a6b2afc9826d8469e91b66386ad62a, type: 3}
     Price: 0
-    Count: 2
+    Count: 0
   - Name: Potato
     <type>k__BackingField: 5
     Image: {fileID: 21300000, guid: 0aab1bdbd6952aa49b4cb865632f167e, type: 3}
