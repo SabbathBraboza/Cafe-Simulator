@@ -58,13 +58,13 @@ public class CookingBook : MonoBehaviour
              () =>
              {
                  ChangeCount(Index, 1);
-                 Incrementor.IncementValue(MockRecipe.Ingredients[Index]);
+                 Incrementor.IncementValue(MockRecipe.Ingredients[Index],InventoryRef.InventoryIngredientContents.Ingredients[Index].Count);
              }
              ,
              () =>
              {
                  ChangeCount(Index, -1);
-                 Incrementor.IncementValue(MockRecipe.Ingredients[Index]);
+                 Incrementor.IncementValue(MockRecipe.Ingredients[Index],InventoryRef.InventoryIngredientContents.Ingredients[Index].Count);
              }
              ); 
         }

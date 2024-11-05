@@ -58,7 +58,7 @@ public class PanelAnimation : MonoBehaviour
     #region Message Panel Animation
     public void MessageShowPanel(bool value)
     {
-        Message.LeanMoveY(value ? -100f : -70, 0.8f).setEase(LeanType);
+        Message.LeanMove(value ? Vector3.one : Vector3.zero, 0.8f).setEase(LeanType);
         Message.LeanScale(value ? Vector2.one : Vector2.zero, 0.8f).setEase(LeanType).setOnComplete(()=> StartCoroutine(UnShow()));
     }
 
@@ -71,7 +71,7 @@ public class PanelAnimation : MonoBehaviour
     public void MessageUnShowPanel(bool value)
     {
         Message.LeanScale(value ? Vector2.one : Vector2.zero, 0.8f).setEase(LeanType);
-        Message.LeanMoveX(value ? -100f : 60, 0.8f).setEase(LeanType);
+        Message.LeanMove(value ? Vector3.one : Vector3.zero, 0.8f).setEase(LeanType);
     }
     #endregion
 }

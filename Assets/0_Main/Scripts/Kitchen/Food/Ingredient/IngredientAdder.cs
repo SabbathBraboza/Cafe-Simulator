@@ -6,6 +6,7 @@ public class IngredientAdder : MonoBehaviour
 {
     [SerializeField] private IngredientDisplay IngredientDisplay;
     [SerializeField] private Button Add, Remove;
+    [SerializeField] private GameObject AlertMessageBox;
 
     public Button.ButtonClickedEvent OnAdd => Add.onClick;
     public Button.ButtonClickedEvent OnRemove => Remove.onClick;
@@ -14,8 +15,19 @@ public class IngredientAdder : MonoBehaviour
 
     public void DisplayIngredients(Ingredient recipe) => IngredientDisplay.Display(recipe, false);
 
-    public void IncementValue(Ingredient Value) => IngredientDisplay.SetCount(Value.Count);
-   
+    public void IncementValue(Ingredient Value, int Maxcount)
+    {
+        IngredientDisplay.SetCount(Value.Count);
+        if(Value.Count == Maxcount)
+        {
+            AlertMessageBox.SetActive(true);
+        }
+        else
+        {
+            AlertMessageBox.SetActive(false);
+        }
+
+    }
     private void OnDestroy()
     {
         Add.onClick.RemoveAllListeners();
