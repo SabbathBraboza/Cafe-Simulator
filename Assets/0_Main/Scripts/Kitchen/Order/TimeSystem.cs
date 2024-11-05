@@ -47,11 +47,13 @@ public class TimeSystem : MonoBehaviour
         if(OrderStatus)
         {
             Debug.Log("Order Completed");
+            OrderStatus = false;
         }
         else
         {
             CurrentOrderSystemRef.OrderVerRef.foodNotificationref.OrderCancel = true;
             CurrentOrderSystemRef.OrderVerRef.FailedToPlacedOrder();
+            OrderStatus = false;
         }
 
         CurrentOrderSystemRef.ClearOrderTrash(CurrentOrderRemove);
