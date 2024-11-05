@@ -48,9 +48,9 @@ public class FoodNotification : MonoBehaviour
          }
             else
             {
-                TimerText.color = Color.green;
+                TimerText.color = Color.black;
             }
-        TimerText.text = $"Cooked in : 00: {RemainingTime:F0} Seconds";
+        TimerText.text = $"Cooked in: 00:{RemainingTime:F0} Seconds";
         yield return new WaitForSeconds(1);
         RemainingTime -= 1;
 
@@ -73,7 +73,7 @@ public class FoodNotification : MonoBehaviour
 
     public void ResetText()
     {
-        TimerText.text = "Cooking Status";
+        TimerText.text = "Cook Time: 00:00";
         TimerText.color = Origin;
     }
 }

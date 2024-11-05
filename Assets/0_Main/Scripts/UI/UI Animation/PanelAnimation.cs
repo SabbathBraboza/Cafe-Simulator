@@ -45,7 +45,6 @@ public class PanelAnimation : MonoBehaviour
     {
         if (value)
         {
-            AppPanel.position = AppPosition.position;
             AppPanel.LeanMove(value ? Vector3.one : Vector3.zero, 0.1f).setEase(LeanType);
             AppPanel.LeanScale(value ? Vector3.one : Vector3.zero, 0.1f).setEase(LeanType);
         }
@@ -72,7 +71,7 @@ public class PanelAnimation : MonoBehaviour
     public void MessageUnShowPanel(bool value)
     {
         Message.LeanScale(value ? Vector2.one : Vector2.zero, 0.8f).setEase(LeanType);
-        Message.LeanMoveX(value ? -100f : 70, 0.8f).setEase(LeanType);
+        Message.LeanMoveX(value ? -100f : 60, 0.8f).setEase(LeanType);
     }
     #endregion
 }

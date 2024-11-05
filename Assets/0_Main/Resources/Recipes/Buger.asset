@@ -19,7 +19,7 @@ MonoBehaviour:
   Veg: 0
   Non_Veg: 1
   Other: 0
-  BuildSeconds: 30
+  BuildSeconds: 0
   BuildMinutes: 0
   OrderSeconds: 60
   OrderMinutes: 0
