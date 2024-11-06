@@ -1,48 +1,63 @@
+using Emp37.Utility;
+using System.Collections;
+using System.ComponentModel;
 using UnityEngine;
 using UnityEngine.AI;
 
 public class NPC_Controller : MonoBehaviour
 {
+    [Header("Values:")]
+    [SerializeField] private int CurrentWayPointIndex;
+    [SerializeField] private float WaitTime = 5f;
+
+    [Space(5f)] 
     [Header("Refenece:")]
     [SerializeField] private Animator anime;
     [SerializeField] private NavMeshAgent agent;
+    [SerializeField] private Transform WayPointContainer;
+    [SerializeField] private Transform[] WayPoints;
+ 
+    private bool IsMoving => agent.velocity.x != 0f || agent.velocity.y != 0f;
 
-    private float WalkRadius = 5f;
-
-
-    private void Start()
+    [Button]
+    private void Reset()
     {
         anime = GetComponent<Animator>();
         agent = GetComponent<NavMeshAgent>();
-        MoveToNextPoint();
+        agent.speed = 3.2f;
+        FindWayPoints();
+    }
+
+    private void Start()
+    {
+       CurrentWayPointIndex = 0;
+        MoveToNextWayPoint();
     }
 
     private void Update()
     {
-        if(!agent.pathPending && agent.remainingDistance < 0.5f)
-        {
-            MoveToNextPoint();
-        }
-
-        if(agent.velocity.magnitude > 0.1f)
-        {
-            anime.SetBool("IsWalking" , true);
-        }
-        else
-        {
-            anime.SetBool("IsWalking", false);
-        }
+        
     }
 
-    private void MoveToNextPoint()
+    private void FindWayPoints()
     {
-        Vector3 RandomDirection = Random.insideUnitSphere * WalkRadius;
-        RandomDirection += transform.position;
 
-        NavMeshHit Hit;
-       if(NavMesh.SamplePosition(RandomDirection,out Hit, WalkRadius ,1))
-        {
-            agent.SetDestination(Hit.position);
-        }
     }
+
+    IEnumerator WaitAndMoveToNextPoint()
+    {
+        agent.isStopped = true;
+
+        yield return new WaitForSeconds(WaitTime);
+
+        MoveToNextWayPoint();
+
+        agent.isStopped = false;
+    }
+
+    private void MoveToNextWayPoint()
+    {
+
+    }
+
 }
