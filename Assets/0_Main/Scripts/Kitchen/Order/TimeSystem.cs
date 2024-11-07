@@ -19,7 +19,7 @@ public class TimeSystem : MonoBehaviour
     [SerializeField] internal GameObject CurrentOrder;
     [SerializeField] private OrderSystem CurrentOrderSystemRef;
 
-    public void UpdateTime(int mins,int secs, GameObject order,int orderNumber)
+    public void UpdateTime(int mins, int secs, GameObject order, int orderNumber)
     {
         CurrentMins = mins;
         CurrentSecs = secs;
@@ -30,13 +30,13 @@ public class TimeSystem : MonoBehaviour
 
     IEnumerator StartCountDown()
     {
-        while(CurrentMins > 0 || CurrentSecs > 0 && !OrderStatus)
+        while (CurrentMins > 0 || CurrentSecs > 0 && !OrderStatus)
         {
             TimeRemainingText.text = $"Order Time:{CurrentMins:D2}:{CurrentSecs:D2}";
             yield return new WaitForSeconds(1);
             CurrentSecs--;
 
-            if(CurrentSecs < 0 & !OrderStatus) 
+            if (CurrentSecs < 0 && !OrderStatus)
             {
                 CurrentSecs = 59;
                 CurrentMins--;
@@ -44,7 +44,7 @@ public class TimeSystem : MonoBehaviour
         }
 
         TimeRemainingText.text = "Order Time: 00:00";
-        if(OrderStatus)
+        if (OrderStatus)
         {
             Debug.Log("Order Completed");
             OrderStatus = false;
@@ -61,5 +61,9 @@ public class TimeSystem : MonoBehaviour
         CurrentOrderSystemRef.NewOrder();
     }
 
-    public void DestroyOrder(GameObject order) => Destroy(order);
+    public void DestroyOrder(GameObject order)
+    {
+        Destroy(order);
+        CurrentOrder = null;
+    }
 }

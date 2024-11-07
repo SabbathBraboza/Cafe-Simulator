@@ -58,7 +58,7 @@ public class PanelAnimation : MonoBehaviour
     #region Message Panel Animation
     public void MessageShowPanel(bool value)
     {
-        Message.LeanMoveY(value ? 0 : -70, 0.8f).setEase(LeanType); // Use targetY for movement
+        Message.LeanMoveY(value ? 0 : -120, 0.8f).setEase(LeanType); // Use targetY for movement
         Message.LeanScale(value ? Vector2.one : Vector2.zero, 0.8f).setEase(LeanType).setOnComplete(() => StartCoroutine(UnShow()));
     }
 

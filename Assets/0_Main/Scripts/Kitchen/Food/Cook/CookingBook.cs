@@ -45,7 +45,7 @@ public class CookingBook : MonoBehaviour
     }
 
     [Button]
-    private void CookingIngredients()
+    public void CookingIngredients()
     {
         ClearIngredients();
         for(int i = 0; i< Ingredient.IngrendientTypeLength.Length ; i++)

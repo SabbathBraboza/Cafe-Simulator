@@ -26,6 +26,7 @@ public class Order : MonoBehaviour
     private void Start()
     {
         ToggelRef.onValueChanged.RemoveAllListeners();
+        ToggelRef.isOn = false;
         ToggelRef.onValueChanged.AddListener((isOn) => OrderPlaced(isOn));
     }
 

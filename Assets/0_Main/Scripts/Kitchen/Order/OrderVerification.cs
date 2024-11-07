@@ -21,7 +21,12 @@ public class OrderVerification : MonoBehaviour
         }
     }
 
-    public void PayToAccount(int amount) => OnlinePaymentRef.CreditPayment(amount,CurrentCustomerName);
-    
-    public void FailedToPlacedOrder() => OnlinePaymentRef.DebitPaymentForCustomer(ProductPrice /2,CurrentCustomerName);
+    public void PayToAccount(int amount)
+    {
+        OnlinePaymentRef.CreditPayment(amount, CurrentCustomerName);
+    }
+    public void FailedToPlacedOrder()
+    {
+        OnlinePaymentRef.DebitPaymentForCustomer(ProductPrice / 2, CurrentCustomerName);
+    }
 }

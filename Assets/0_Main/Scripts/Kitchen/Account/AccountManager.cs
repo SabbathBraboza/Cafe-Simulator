@@ -20,9 +20,9 @@ public class AccountManager : MonoBehaviour
 
     public void TotalAmount() => CurrentAmountText.text = CurrentAccountAmount.ToString();
     
-    public void DebitAmount(int amount)
+    public void DebitAmount(int Amount)
     {
-         CurrentAccountAmount = Mathf.Clamp(CurrentAccountAmount - amount, 0, Fixed);
+         CurrentAccountAmount = Mathf.Clamp(CurrentAccountAmount - Amount, 0, Fixed);
         BalanceRef.CurrentBankBalance = CurrentAccountAmount;
     }
 
