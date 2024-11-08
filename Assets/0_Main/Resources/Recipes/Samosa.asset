@@ -21,8 +21,8 @@ MonoBehaviour:
   Other: 0
   BuildSeconds: 15
   BuildMinutes: 0
-  OrderSeconds: 0
-  OrderMinutes: 45
+  OrderSeconds: 45
+  OrderMinutes: 0
   Ingredients:
   - Name: Flour
     <type>k__BackingField: 0

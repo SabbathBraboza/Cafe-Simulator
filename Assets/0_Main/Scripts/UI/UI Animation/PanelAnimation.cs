@@ -58,8 +58,16 @@ public class PanelAnimation : MonoBehaviour
     #region Message Panel Animation
     public void MessageShowPanel(bool value)
     {
-        Message.LeanMoveY(value ? 0 : -120, 0.8f).setEase(LeanType); // Use targetY for movement
-        Message.LeanScale(value ? Vector2.one : Vector2.zero, 0.8f).setEase(LeanType).setOnComplete(() => StartCoroutine(UnShow()));
+        if (value)
+        {
+            Message.LeanMove(value ? Vector3.one : Vector3.zero, 0.8f).setEase(LeanType); // Use targetY for movement
+            Message.LeanScale(value ? Vector2.one : Vector2.zero, 0.8f).setEase(LeanType).setOnComplete(() => StartCoroutine(UnShow()));
+        }
+        else
+        {
+            Message.LeanMove(value ? Vector3.one : Vector3.zero, 0.8f).setEase(LeanType); // Use targetY for movement
+            Message.LeanScale(value ? Vector2.one : Vector2.zero, 0.8f).setEase(LeanType).setOnComplete(() => StartCoroutine(UnShow()));
+        }
     }
 
     IEnumerator UnShow()
@@ -70,8 +78,16 @@ public class PanelAnimation : MonoBehaviour
 
     public void MessageUnShowPanel(bool value)
     {
-        Message.LeanScale(value ? Vector2.one : Vector2.zero, 0.8f).setEase(LeanType);
-        Message.LeanMoveY(value ? 0 : 75, 0.8f).setEase(LeanType);
+        if (value)
+        {
+            Message.LeanMove(value ? Vector3.one : Vector3.zero, 0.8f).setEase(LeanType); // Use targetY for movement
+            Message.LeanScale(value ? Vector2.one : Vector2.zero, 0.8f).setEase(LeanType);
+        }
+        else
+        {
+            Message.LeanMove(value ? Vector3.one : Vector3.zero, 0.8f).setEase(LeanType); // Use targetY for movement
+            Message.LeanScale(value ? Vector2.one : Vector2.zero, 0.8f).setEase(LeanType);
+        }
     }
     #endregion
 }

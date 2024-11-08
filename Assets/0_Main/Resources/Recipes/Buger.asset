@@ -19,9 +19,9 @@ MonoBehaviour:
   Veg: 0
   Non_Veg: 1
   Other: 0
-  BuildSeconds: 0
+  BuildSeconds: 15
   BuildMinutes: 0
-  OrderSeconds: 60
+  OrderSeconds: 30
   OrderMinutes: 0
   Ingredients:
   - Name: Flour

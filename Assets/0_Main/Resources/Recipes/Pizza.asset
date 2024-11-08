@@ -19,10 +19,10 @@ MonoBehaviour:
   Veg: 1
   Non_Veg: 0
   Other: 0
-  BuildSeconds: 0
-  BuildMinutes: 3
-  OrderSeconds: 0
-  OrderMinutes: 4
+  BuildSeconds: 30
+  BuildMinutes: 0
+  OrderSeconds: 59
+  OrderMinutes: 0
   Ingredients:
   - Name: Flour
     <type>k__BackingField: 0

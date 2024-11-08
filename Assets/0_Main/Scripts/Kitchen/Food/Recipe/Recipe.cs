@@ -2,7 +2,6 @@ using UnityEngine;
 using Emp37.Utility;
 using System;
 using System.IO;
-using UnityEditor;
 
 [CreateAssetMenu(menuName ="Kitchen/New Recipe", order = 58)]
 public class Recipe : ScriptableObject
@@ -34,7 +33,6 @@ public class Recipe : ScriptableObject
 
     [Header("Path:")]
     public string CurrentImagePath = "Assets/0_Main/Resources/Ingredients/";
-
 
     [Button]
     private void Reset()
@@ -68,13 +66,11 @@ public class Recipe : ScriptableObject
     private Sprite LoadSpriteFromPath(string imagename)
     {
         string FullPath = Path.Combine(CurrentImagePath, imagename + ".Jpg");
-        Sprite Sprite = AssetDatabase.LoadAssetAtPath<Sprite>(FullPath);
+        Sprite Sprite = Resources.Load<Sprite>(FullPath);
         if(Sprite == null)
         {
             Debug.LogWarning("Sprite not Found");
         }
-
         return Sprite;
-
     }
 }
