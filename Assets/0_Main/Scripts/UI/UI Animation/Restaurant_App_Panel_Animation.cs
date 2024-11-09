@@ -1,5 +1,4 @@
 using UnityEngine;
-using static UnityEngine.Rendering.DebugUI;
 
 public class Restaurant_App_Panel_Animation : MonoBehaviour
 {
@@ -47,10 +46,8 @@ public class Restaurant_App_Panel_Animation : MonoBehaviour
     public void MainContentAnimation(bool value) => MainContentPanel.LeanMoveLocalX(value ? -660 : 0, 0.2f).setEase(Type);
 
     #region Cooking Animation Panel 
-    public void OpenCookingContent(bool value)
-    {
-        CookingContent.LeanMoveLocalX(value ? 0 : 680, 0.2f).setEase(Type);
-    }
+    public void OpenCookingContent(bool value) => CookingContent.LeanMoveLocalX(value ? 0 : 680, 0.2f).setEase(Type);
+    
     public void MenuPanelOpen(bool value)
     {
         if (value)
@@ -65,6 +62,7 @@ public class Restaurant_App_Panel_Animation : MonoBehaviour
             MenuPanel.LeanMove(value ? Vector3.one : Vector3.zero, 0.2f).setEase(Type).setDelay(0.02f);
         }
     }
+
     public void RecipePanelOpen(bool value)
     {
         if (value)
@@ -79,6 +77,7 @@ public class Restaurant_App_Panel_Animation : MonoBehaviour
             RecipePanel.LeanMove(value ? Vector3.one : Vector3.zero, 0.2f).setEase(Type).setDelay(0.02f);
         }
     }
+
     public void CookingPanelOpen(bool value)
     {
         if (value)

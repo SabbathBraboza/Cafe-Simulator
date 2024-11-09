@@ -5,9 +5,6 @@ public class PanelAnimation : MonoBehaviour
 {
       [Header("Lean Tools:")]
       [SerializeField] private LeanTweenType LeanType;
-      public float Duration = 0.2f;
-      public float IntroDuration = 0.8f;
-      public float DealyGap = 0.2f;
 
     [Space(5f)]
     [Header("GameObjects:")]
@@ -24,7 +21,7 @@ public class PanelAnimation : MonoBehaviour
       [SerializeField] private RectTransform SettingAppPosition;
       [SerializeField] private RectTransform AppPosition;
  
-    public void IpadPanelMove(bool value) => IPadPanel.LeanMoveLocalX(value? 0: -2000, Duration).setEase(LeanType);
+    public void IpadPanelMove(bool value) => IPadPanel.LeanMoveLocalX(value? 0: -2000, 1f).setEase(LeanType);
 
      public void OpenSettingApp(bool value)
       {

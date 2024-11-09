@@ -35,11 +35,7 @@ public class Clicker : MonoBehaviour
             if (Input.GetMouseButtonDown(0))
             {
                   var ray = camera.ScreenPointToRay(Input.mousePosition);
-
-                  if (Physics.Raycast(ray, out var info, camera.farClipPlane, layer))
-                  {
-                        Onclick.Invoke(info.point);
-                  }
+                  if (Physics.Raycast(ray, out var info, camera.farClipPlane, layer)) Onclick.Invoke(info.point);  
             }
     }
       public void Disable() => enabled = false;

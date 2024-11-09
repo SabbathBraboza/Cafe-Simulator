@@ -4,12 +4,13 @@ using UnityEngine;
 public class AccountManager : MonoBehaviour
 {
     [Header("AccountDetails:")]
-    public int CurrentAccountAmount = 1000;
-    public int Fixed = 1000;
+    public int CurrentAccountAmount = 1000;   // Current Amount 
+    public int Fixed = 1000;                  //Clamped The Amount 
 
     [Header("UI Text:")]
     public TMP_Text CurrentAmountText;
 
+    [Header("Reference:")]
     public BankBalance BalanceRef;
 
     public void Start()

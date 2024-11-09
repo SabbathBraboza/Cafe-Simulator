@@ -59,7 +59,7 @@ public class Shopping : MonoBehaviour
         ExtraStuff();
     }
 
-    public void CartAreaClear() => StartCoroutine(Clear());
+    public void CartAreaClear() => StartCoroutine(Clear()); // Used on Payment Button On Click
     
     IEnumerator Clear()
     {

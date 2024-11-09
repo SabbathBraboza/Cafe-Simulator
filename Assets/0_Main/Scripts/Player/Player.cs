@@ -10,7 +10,7 @@ public class Player : MonoBehaviour
       [SerializeField] private Animator anime;
       [SerializeField] private new Transform transform;
 
-      readonly int SpeedHash = Animator.StringToHash("Speed");
+     private readonly int SpeedHash = Animator.StringToHash("Speed");
 
       public Vector3 CurrentPosition => transform.position;
       public Vector3 PersivousPosition { get; private set; }
@@ -30,10 +30,12 @@ public class Player : MonoBehaviour
             Clicker.Onclick.AddListener(MoveTo);
       }
 
-      private void Update()
-      {
-            if (IsMoving)
-                  anime.SetFloat(SpeedHash, agent.velocity.magnitude);
+    private void Update()
+    {
+        if (IsMoving)
+        {
+            anime.SetFloat(SpeedHash, agent.velocity.magnitude);
+        }
     }
 
       public void Disable()
