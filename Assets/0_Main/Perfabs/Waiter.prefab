@@ -814,37 +814,6 @@ Transform:
   - {fileID: 4347865961037190983}
   m_Father: {fileID: 7781559620256422958}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!1 &1951275868842063886
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 6640071846444858407}
-  m_Layer: 0
-  m_Name: StartLocation
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &6640071846444858407
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1951275868842063886}
-  serializedVersion: 2
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children: []
-  m_Father: {fileID: 8327760130309039602}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &2139924022739631067
 GameObject:
   m_ObjectHideFlags: 0
@@ -2005,7 +1974,6 @@ Transform:
   - {fileID: 8249712577141663087}
   - {fileID: 2418315638036896123}
   - {fileID: 798616722711266241}
-  - {fileID: 6640071846444858407}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 180, z: 0}
 --- !u!95 &5908326604051008824
@@ -2168,7 +2136,7 @@ MonoBehaviour:
   agent: {fileID: 7148480446960830797}
   anime: {fileID: 5908326604051008824}
   Self: {fileID: 5407109024279928726}
-  StartLocation: {fileID: 6640071846444858407}
+  StartLocation: {fileID: 0}
   SpawnTray: {fileID: 6174100241867401328, guid: da91cc7c3250b3b4b96a9681edf21e05,
     type: 3}
   SpawnFoodObject: {fileID: 0}

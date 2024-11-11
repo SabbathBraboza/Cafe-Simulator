@@ -36,14 +36,17 @@ public class Waiter : MonoBehaviour
     private void Start()
     {
         ActiveSelf(true);
+        
         SetNewRandomDestination();
     }
-
+    public void ResetOrigin()
+    {
+        transform.SetPositionAndRotation(StartLocation.transform.position, StartLocation.transform.rotation); //.position = StartLocation.transform.position;
+        //transform.rotation = StartLocation.transform.rotation;
+    }
     public void ActiveSelf(bool Value)
     {
         Self.SetActive(Value);
-        Self.gameObject.transform.position = StartLocation.transform.position;
-        Self.gameObject.transform.rotation = StartLocation.transform.rotation;
     }
 
     private void GiveOrder() => SetNewRandomDestination();
@@ -53,8 +56,7 @@ public class Waiter : MonoBehaviour
        if(CanMove && !agent.pathPending && agent.remainingDistance <= agent.stoppingDistance)
        {
           agent.isStopped = true;
-            enabled = false;
-            CanMove = false;
+            enabled = CanMove = false;
             agent.enabled = false;
             StartCoroutine(SpawnFood());
        }
@@ -70,9 +72,10 @@ public class Waiter : MonoBehaviour
     private void FinalReachPoint()
     {
         var TraySpawn = Instantiate(SpawnTray,CurrentFoodSpawn,Quaternion.identity);
-        var FoodSpawn = Instantiate(SpawnFoodContent,CurrentFoodSpawn,Quaternion.identity);
+        var FoodSpawn = Instantiate(SpawnFoodObject, CurrentFoodSpawn,Quaternion.identity);
         Rigidbody TrayRigid = TraySpawn.GetComponent<Rigidbody>();
         TrayRigid.isKinematic =false;
+        TrayRigid.useGravity = true;
         Self.SetActive(false);
         ClearChildGameObject();
     }

@@ -15,9 +15,10 @@ public class BakeRecipe : MonoBehaviour
         int temp = Random.Range(0, ProductPosition.Length);
         if(RecipeObject != null)
         {
-           waiterRef.ActiveSelf(true);
+            waiterRef.ActiveSelf(true);
             var RecipeObjectSpawn = Instantiate(RecipeObject, ProductPosition[temp].position,Quaternion.identity , Spawner.transform);
             print("Recipe Object Spawned");
+            waiterRef.ResetOrigin();
             StartCoroutine(ReadyToGo());
         }
         else

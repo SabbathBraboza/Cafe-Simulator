@@ -43,12 +43,12 @@ MonoBehaviour:
     <type>k__BackingField: 0
     Image: {fileID: 21300000, guid: ddbed7f5e9cc8ce4c885c6a29511bb96, type: 3}
     Price: 0
-    Count: 2
+    Count: 0
   - Name: Cheese
     <type>k__BackingField: 0
     Image: {fileID: 21300000, guid: 66a6b2afc9826d8469e91b66386ad62a, type: 3}
     Price: 0
-    Count: 2
+    Count: 0
   - Name: Potato
     <type>k__BackingField: 0
     Image: {fileID: 21300000, guid: 0aab1bdbd6952aa49b4cb865632f167e, type: 3}
@@ -58,7 +58,7 @@ MonoBehaviour:
     <type>k__BackingField: 0
     Image: {fileID: 21300000, guid: 77e4ffea212bac5438b8dd40c6b62ed3, type: 3}
     Price: 0
-    Count: 1
+    Count: 0
   - Name: Chicken
     <type>k__BackingField: 0
     Image: {fileID: 21300000, guid: eb89fe8cb59730e4f996969915bc0c93, type: 3}
@@ -68,7 +68,7 @@ MonoBehaviour:
     <type>k__BackingField: 0
     Image: {fileID: 21300000, guid: 5d371da55691b69408ff1d35904bf5fc, type: 3}
     Price: 0
-    Count: 0
+    Count: 2
   - Name: Ghee
     <type>k__BackingField: 0
     Image: {fileID: 21300000, guid: c0b6fb1ca66e5074488548b702f316f9, type: 3}
@@ -83,7 +83,7 @@ MonoBehaviour:
     <type>k__BackingField: 0
     Image: {fileID: 21300000, guid: d0bbcdae1e319974c862621aebfc066e, type: 3}
     Price: 0
-    Count: 0
+    Count: 3
   - Name: Ketchup
     <type>k__BackingField: 0
     Image: {fileID: 21300000, guid: e1272a0facbafd346970ffb581e71eaa, type: 3}
@@ -93,7 +93,7 @@ MonoBehaviour:
     <type>k__BackingField: 0
     Image: {fileID: 21300000, guid: 63d60144ab064d647921acbb239a8dcd, type: 3}
     Price: 0
-    Count: 0
+    Count: 2
   - Name: Lettuce
     <type>k__BackingField: 0
     Image: {fileID: 21300000, guid: 7c061b0e997c68b4e846ce9e2fb18f17, type: 3}
